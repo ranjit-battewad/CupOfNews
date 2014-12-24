@@ -1,0 +1,43 @@
+{
+    "word":"pattern",
+    "linebreaks": " pat|tern ",
+    "pronunciation": [
+        {
+            "text": " /'pat(?)n ",
+            "audioLink": " http://www.oxforddictionaries.com/media/english/uk_pron/p/pat/patte/pattern__gb_1.mp3 "
+        }
+    ],
+    "origin": " Middle English patron 'something serving as a model', from Old French (see patron).",
+    "defination": [
+        {
+            "partsofspeech": " NOUN "
+        },
+        {
+            "usage": [
+                {
+                    "stamt": " Structurally, the tumor cells were arranged in a medullary pattern composed of polygonal tumor cells. "
+                },
+                {
+                    "stamt": " The hair-cells within the spiralling cochlear duct are arranged in a pattern like the bristles of a brush. "
+                },
+                {
+                    "stamt": " The fossils indicate the wings had feathers, arranged in a similar pattern to that of modern birds.."
+                }
+            ]
+        },
+        {
+            "synonyms": [
+                {
+                    "words": " model, example, criterion, standard, basis, point of reference "
+                }
+            ]
+        },
+        {
+            "antonyms": [
+                {
+                    "words": "plainness "
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "dict_pop"
+        ],
+        "container|align": "center",
+        "container|pack": "center",
+        "designer|userClassName": "PopUp",
+        "height": 120,
+        "layout": "vbox",
+        "width": 220
+    },
+    "designerId": "4a269ce7-58e3-4fae-9108-a08c8b80b12e",
+    "cn": [
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "dict_header-cls"
+                ],
+                "designer|displayName": "HeaderLabel",
+                "html": "<div>Add Word</div><hr/>",
+                "margin": "auto auto auto auto",
+                "width": "90%"
+            },
+            "designerId": "f685769f-03c1-43e9-8247-e3be6a749d97"
+        },
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "MyWord",
+                "html": "Test Word",
+                "margin": "auto auto auto auto",
+                "width": "90%"
+            },
+            "designerId": "e1938a62-8d81-4229-aa57-68ec395574bc"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "add_dictionary"
+                ],
+                "docked": null,
+                "margin": "14 auto  auto  auto ",
+                "style": null,
+                "text": "Add to Dictionary",
+                "width": "90%"
+            },
+            "designerId": "672b7ecd-5035-485a-b02d-93afbd115c08"
+        }
+    ]
+}

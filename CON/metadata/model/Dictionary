@@ -1,0 +1,38 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Dictionary"
+    },
+    "designerId": "b89b848a-e661-4e8c-93e2-782797acbfe0",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "word"
+            },
+            "designerId": "e20eaf0c-149d-4c16-8cd7-80cbece8dd37"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "designerId": "286fbbc6-9bc8-4293-bc6d-6e404dc30b6d"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js",
+        "url": "wtc/ux/Cover.js"
+    },
+    "designerId": "9c05d425-6a87-4c84-a582-812036d8de64"
+}

@@ -1,0 +1,147 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userClassName": "MainNav",
+        "itemId": "mynavigationview"
+    },
+    "designerId": "ad6fcb8e-5dc2-46ca-b29e-fb139c649328",
+    "cn": [
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "MainNavBar",
+                "docked": "top",
+                "itemId": "mynavigationbar",
+                "minHeight": "58px"
+            },
+            "designerId": "82d8ce9f-7a58-4cb7-adc1-8473ba67b73a",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "cls": [
+                            "audiobuttoncls",
+                            "audioPlay"
+                        ],
+                        "designer|uiInterfaceName": "plain",
+                        "hidden": true,
+                        "icon": null,
+                        "id": "audioPlay",
+                        "itemId": "audioPlay",
+                        "siteUrl": "",
+                        "text": "",
+                        "ui": "plain",
+                        "width": null
+                    },
+                    "designerId": "8f3028c4-1021-4875-925f-f9b881a23a72",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "siteUrl",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "cls": [
+                            "gotowebsitecls"
+                        ],
+                        "designer|uiInterfaceName": "plain",
+                        "hidden": true,
+                        "icon": null,
+                        "id": "gotowebsiteBtn",
+                        "itemId": "gotowebsiteBtn",
+                        "siteUrl": "",
+                        "text": "",
+                        "ui": "plain",
+                        "width": null
+                    },
+                    "designerId": "238ccc74-bd69-4302-9e49-e6c389b70e9d",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "siteUrl",
+                            "type": "string"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "designer|uiInterfaceName": "plain",
+                        "iconCls": "settings",
+                        "id": "userprefbtn",
+                        "itemId": "userprefbtn",
+                        "text": "",
+                        "ui": "plain"
+                    },
+                    "designerId": "c9f6b4a6-b75b-4172-b928-8b869e0aba97"
+                }
+            ]
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Cup of News"
+            },
+            "designerId": "fa2d4db6-599b-4ae2-bed5-f4b03fecf3cc",
+            "masterInstanceId": "cb904b27-e876-4372-beaa-f8179ee927f7"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "ux-cover"
+                ],
+                "docked": "bottom",
+                "height": 80,
+                "hidden": false,
+                "html": "<div class=\"admob\"><center><a href=\"javascript:CON.app.openAdmobSite();\" ><img src=\"resources/project-images/senchatutorials.png\"/></a></center></div>",
+                "itemId": "footer_toolbar",
+                "style": "border-top:none;"
+            },
+            "designerId": "681ec71a-26a0-4c9e-af84-08ef217807f1"
+        }
+    ]
+}

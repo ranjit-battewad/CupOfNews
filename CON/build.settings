@@ -1,0 +1,58 @@
+{
+    "webBuild": {
+        "environment": "production",
+        "clean": "on",
+        "publishPath": ""
+    },
+    "androidSimulate": {
+        "applicationName": "CON",
+        "applicationId": "com.mycompany.myAppID",
+        "configuration": "Debug",
+        "androidAPILevel": "8",
+        "versionString": "1.0",
+        "versionCode": "1",
+        "sdkPath": "/Users/walkingtree/Documents/adt-bundle-mac-x86_64-20140702/sdk",
+        "permissions": [
+            "INTERNET",
+            "ACCESS_NETWORK_STATE",
+            "CAMERA",
+            "VIBRATE",
+            "ACCESS_FINE_LOCATION",
+            "ACCESS_COARSE_LOCATION",
+            "CALL_PHONE"
+        ],
+        "icon": {
+            "36": "resources/icons/Icon_Android36.png",
+            "48": "resources/icons/Icon_Android48.png",
+            "72": "resources/icons/Icon~ipad.png"
+        },
+        "orientations": [
+            "portrait",
+            "portraitUpsideDown",
+            "landscapeLeft",
+            "landscapeRight"
+        ]
+    },
+    "iosBuild": {
+        "applicationName": "CON",
+        "applicationId": "com.mycompany.myAppID",
+        "configuration": "Debug",
+        "versionString": "1.0",
+        "bundleSeedId": "",
+        "provisionProfile": "",
+        "deviceType": "universal",
+        "icon": {
+            "57": "resources/icons/Icon.png",
+            "72": "resources/icons/Icon~ipad.png",
+            "114": "resources/icons/Icon@2x.png",
+            "144": "resources/icons/Icon~ipad@2x.png"
+        },
+        "orientations": [
+            "portrait",
+            "portraitUpsideDown",
+            "landscapeLeft",
+            "landscapeRight"
+        ],
+        "certificateAlias": ""
+    }
+}

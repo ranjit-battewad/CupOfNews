@@ -1,0 +1,26 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "localData"
+    },
+    "designerId": "9a1468e2-d29e-4e09-b0f5-a129b6adf132",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "newssettings"
+            },
+            "designerId": "6d2f9578-efbe-40b9-9f63-833a03414370"
+        }
+    ]
+}

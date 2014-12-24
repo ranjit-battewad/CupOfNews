@@ -1,0 +1,125 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Category"
+    },
+    "designerId": "1e890d7a-00d2-4987-8ca0-744b53375b08",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "publicationsegbtns",
+                "selector": "segmentedbutton#publicationsegbtns"
+            },
+            "designerId": "d9573cb0-f1b3-4c64-9fff-62d6177f9ef3"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "segmentedbutton#publicationsegbtns",
+                "designer|targetType": "Ext.SegmentedButton",
+                "fn": "onSegmentedbuttonToggle",
+                "implHandler": [
+                    "if(isPressed){",
+                    "",
+                    "  //Ext.Viewport.setMasked({xtype:'loadmask',message:'your custom loadmask'});",
+                    "var category=(button.config.pubCategData);",
+                    "     CON.utils.Global.api.currentPubid=parseInt(category.publicationId );",
+                    "           CON.utils.Global.api.currentCatid=parseInt(category.categoryId );",
+                    "",
+                    " var feedUrl = button.config.pubCategData.feedurl;",
+                    " this.feedStore = Ext.create('CON.store.NewsFeed');",
+                    "",
+                    "\tthis.feedStore.setParams({'feedurl':feedUrl});",
+                    "    button.up('list').setStore(this.feedStore);",
+                    "\tthis.feedStore.load({",
+                    "\t\tcallback:function(records){",
+                    "",
+                    "\t\t},",
+                    "        scope: this",
+                    "\t});",
+                    "",
+                    "}",
+                    ""
+                ],
+                "name": "toggle"
+            },
+            "designerId": "2af1a47e-5569-4c4d-b81a-a2eee726ccbd"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "categoryPubNewsList",
+                "selector": "list#pubnewslist"
+            },
+            "designerId": "d37fd2c8-a239-4286-ad4e-1375840520e5"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "list#pubnewslist",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "var alldat=(record.getData());",
+                    "Ext.data.JsonP.request({",
+                    "",
+                    "            url: 'http://aceconapi.walkingtree.in/toprest/trackviews',",
+                    "            params: {",
+                    "                title : alldat.title ,",
+                    "                link:alldat.link,",
+                    "                description:alldat.description,",
+                    "                guid:alldat.guid ,",
+                    "                catId:CON.utils.Global.api.currentPubid,",
+                    "                pubId:CON.utils.Global.api.currentCatid,",
+                    "                pubDate:alldat.pubDate",
+                    "            },",
+                    "",
+                    "            success: function(response) {",
+                    "                Ext.Viewport.setMasked(false);",
+                    "            },",
+                    "            failure: function(response) {",
+                    "                Ext.Viewport.setMasked(false);",
+                    "                //form.up('homepage').setActiveItem(1);",
+                    "            }",
+                    "        });",
+                    "",
+                    "",
+                    "var newsDetailView = Ext.create('CON.view.publication.Detail',{});",
+                    "",
+                    "newsDetailView.setData(record.getData());",
+                    "",
+                    "CON.app.getController(\"Main\").pushView(newsDetailView, CON.title);",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "cf89fabc-1b24-4362-bbda-4aaa084950d7"
+        }
+    ]
+}

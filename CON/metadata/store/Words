@@ -1,0 +1,40 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "Words",
+        "model": "Words",
+        "storeId": "Words"
+    },
+    "designerId": "f6eaf591-0387-4785-96ba-f72e686feed0",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "resources/data/dict/factor.json"
+            },
+            "designerId": "2abb8325-cf64-4c19-9b89-7bfb54133e70",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "34b97d9e-a4e1-483f-9389-f154ae684404"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "type": "class",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Menu",
+        "docked": "left",
+        "extend": "Ext.ux.ActionOverFlowMenuButton",
+        "menuCover": true,
+        "menuItems": [
+            "[",
+            "    ",
+            "    {",
+            "        xtype:'publicationpref'",
+            "        ",
+            "    }",
+            "]"
+        ],
+        "menuSide": "right",
+        "requires": [
+            "CON.view.PublicationPref"
+        ]
+    },
+    "configAlternates": {
+        "menuCover": "boolean",
+        "menuItems": "array"
+    },
+    "designerId": "f7016eec-0e68-4f93-915e-06b06d081a10",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "docked",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "menuCover",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "menuSide",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "menuItems",
+            "type": "string"
+        }
+    ]
+}

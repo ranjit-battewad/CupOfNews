@@ -1,0 +1,85 @@
+[
+    {
+        "code": "toi",
+        "name": "Times Of India",
+        "image": "resources/project-images/toi.png",
+        "categories": [
+            {
+                "name": "Head Lines",
+                "code": "thl",
+                "pubCode": "toi",
+                "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533917/index.rss"
+            },
+            {
+                "name": "World",
+                "code": "wld",
+                "pubCode": "toi",
+                "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533917/index.rss"
+            },
+            {
+                "name": "India",
+                "code": "ind",
+                "pubCode": "toi",
+                "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533916/index.rss"
+            },
+            {
+                "name": "Business",
+                "code": "bus",
+                "pubCode": "toi",
+                "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533919/index.rss"
+            }
+        ]
+    },
+    {
+        "code": "hin",
+        "name": "The Hindu",
+        "image": "resources/project-images/hindu.jpg",
+        "categories": [
+            {
+                "name": "Head Lines",
+                "code": "thl",
+                "pubCode": "hin",
+                "feedUrl": "http://dynamic.feedsportal.com/pf/555218/http://toi.timesofindia.indiatimes.com/rssfeedstopstories.cms"
+            }
+        ]
+    },
+    {
+        "code": "ine",
+        "name": "Business Line",
+        "image": "resources/project-images/inexp.png",
+        "categories": [
+            {
+                "name": "Head Lines",
+                "code": "thl",
+                "pubCode": "bli",
+                "feedUrl": "http://dynamic.feedsportal.com/pf/555218/http://toi.timesofindia.indiatimes.com/rssfeedstopstories.cms"
+            }
+        ]
+    },
+    {
+        "code": "ect",
+        "name": "Business Line",
+        "image": "resources/project-images/ect.png",
+        "categories": [
+            {
+                "name": "Head Lines",
+                "code": "thl",
+                "pubCode": "bli",
+                "feedUrl": "http://dynamic.feedsportal.com/pf/555218/http://toi.timesofindia.indiatimes.com/rssfeedstopstories.cms"
+            }
+        ]
+    },
+    {
+        "code": "ret",
+        "name": "Reuters",
+        "image": "resources/project-images/reuters.png",
+        "categories": [
+            {
+                "name": "Head Lines",
+                "code": "thl",
+                "pubCode": "ret",
+                "feedUrl": "http://in.reuters.com/rssFeed/topNews"
+            }
+        ]
+    }
+]

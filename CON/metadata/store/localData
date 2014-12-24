@@ -1,0 +1,29 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "localData",
+        "model": "localData",
+        "storeId": "localData"
+    },
+    "designerId": "99551602-4d1d-4cc8-a7b2-e808e6398ace",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.LocalStorage",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "localDataStore"
+            },
+            "designerId": "4a5dde30-7405-4583-b9d1-5c7d9e24c891"
+        }
+    ]
+}

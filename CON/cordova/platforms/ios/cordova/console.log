@@ -1,0 +1,651 @@
+2014-12-06 01:00:00.262 CON[10390:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-06 01:00:00.264 CON[10390:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-06 01:00:00.427 CON[10390:80b] Unlimited access to network resources
+2014-12-06 01:00:00.430 CON[10390:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-06 01:00:02.197 CON[10390:80b] [CDVTimer][socialsharing] 75.164020ms
+2014-12-06 01:00:02.198 CON[10390:80b] [CDVTimer][TotalPluginStartup] 75.765967ms
+2014-12-06 01:00:02.645 CON[10390:80b] Resetting plugins due to page load.
+2014-12-06 01:00:04.427 CON[10390:80b] setOptions
+2014-12-06 01:00:04.428 CON[10390:80b] createBannerView
+2014-12-06 01:00:04.428 CON[10390:80b] __createBanner
+2014-12-06 01:00:04.438 CON[10390:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-06 01:00:04.451 CON[10390:80b] THREAD WARNING: ['AdMob'] took '23.300049' ms. Plugin should use a background thread.
+2014-12-06 01:00:04.452 CON[10390:80b] showAd
+2014-12-06 01:00:04.777 CON[10390:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/FED26EAF-5F56-4C12-AA00-BA59E05D1119/CON.app/www/index.html
+2014-12-06 01:00:26.070 CON[10390:80b] itemtap [object Arguments]
+2014-12-06 01:05:21.083 CON[11276:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-06 01:05:21.086 CON[11276:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-06 01:05:21.096 CON[11276:80b] Unlimited access to network resources
+2014-12-06 01:05:21.100 CON[11276:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-06 01:05:21.141 CON[11276:80b] [CDVTimer][socialsharing] 17.035007ms
+2014-12-06 01:05:21.141 CON[11276:80b] [CDVTimer][TotalPluginStartup] 17.623007ms
+2014-12-06 01:05:21.318 CON[11276:80b] Resetting plugins due to page load.
+2014-12-06 01:05:22.248 CON[11276:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/FED26EAF-5F56-4C12-AA00-BA59E05D1119/CON.app/www/index.html
+2014-12-06 01:05:23.541 CON[11276:80b] setOptions
+2014-12-06 01:05:23.541 CON[11276:80b] createBannerView
+2014-12-06 01:05:23.542 CON[11276:80b] __createBanner
+2014-12-06 01:05:23.551 CON[11276:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-06 01:05:23.565 CON[11276:80b] THREAD WARNING: ['AdMob'] took '24.039062' ms. Plugin should use a background thread.
+2014-12-06 01:05:23.567 CON[11276:80b] showAd
+2014-12-06 01:05:29.955 CON[11276:80b] itemtap [object Arguments]
+2014-12-06 01:05:59.828 CON[11276:600b] 01:05:59.828 ERROR:     AVAudioSessionUtilities.h:88: GetProperty_DefaultToZero: AudioSessionGetProperty ('disa') failed with error: '?ytp'
+2014-12-06 01:06:01.919 CON[11276:600b] 01:06:01.919 ERROR:     AVAudioSessionUtilities.h:88: GetProperty_DefaultToZero: AudioSessionGetProperty ('disa') failed with error: '?ytp'
+2014-12-06 01:06:03.921 CON[11276:600b] 01:06:03.921 ERROR:     AVAudioSessionUtilities.h:88: GetProperty_DefaultToZero: AudioSessionGetProperty ('disa') failed with error: '?ytp'
+2014-12-06 01:06:05.922 CON[11276:600b] 01:06:05.921 ERROR:     AVAudioSessionUtilities.h:88: GetProperty_DefaultToZero: AudioSessionGetProperty ('disa') failed with error: '?ytp'
+2014-12-06 01:06:07.510 CON[11276:80b] THREAD WARNING: ['InAppBrowser'] took '178.638184' ms. Plugin should use a background thread.
+2014-12-06 01:06:31.376 CON[11276:80b] error JSON.stringify()ing argument: TypeError: JSON.stringify cannot serialize cyclic structures.
+2014-12-06 01:16:05.374 CON[12550:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-06 01:16:05.377 CON[12550:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-06 01:16:05.385 CON[12550:80b] Unlimited access to network resources
+2014-12-06 01:16:05.389 CON[12550:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-06 01:16:05.426 CON[12550:80b] [CDVTimer][socialsharing] 15.938997ms
+2014-12-06 01:16:05.426 CON[12550:80b] [CDVTimer][TotalPluginStartup] 16.486049ms
+2014-12-06 01:16:05.507 CON[12550:80b] Resetting plugins due to page load.
+2014-12-06 01:16:06.501 CON[12550:80b] setOptions
+2014-12-06 01:16:06.501 CON[12550:80b] createBannerView
+2014-12-06 01:16:06.502 CON[12550:80b] __createBanner
+2014-12-06 01:16:06.510 CON[12550:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-06 01:16:06.523 CON[12550:80b] THREAD WARNING: ['AdMob'] took '21.395996' ms. Plugin should use a background thread.
+2014-12-06 01:16:06.524 CON[12550:80b] showAd
+2014-12-06 01:16:06.820 CON[12550:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/FED26EAF-5F56-4C12-AA00-BA59E05D1119/CON.app/www/index.html
+2014-12-06 01:16:13.353 CON[12550:80b] itemtap [object Arguments]
+2014-12-06 01:16:14.333 CON[12550:80b] itemtap [object Arguments]
+2014-12-06 01:33:28.372 CON[13865:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-06 01:33:28.374 CON[13865:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-06 01:33:28.383 CON[13865:80b] Unlimited access to network resources
+2014-12-06 01:33:28.386 CON[13865:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-06 01:33:28.421 CON[13865:80b] [CDVTimer][socialsharing] 13.674021ms
+2014-12-06 01:33:28.422 CON[13865:80b] [CDVTimer][TotalPluginStartup] 14.250994ms
+2014-12-06 01:33:28.526 CON[13865:80b] Resetting plugins due to page load.
+2014-12-06 01:33:29.394 CON[13865:80b] setOptions
+2014-12-06 01:33:29.395 CON[13865:80b] createBannerView
+2014-12-06 01:33:29.395 CON[13865:80b] __createBanner
+2014-12-06 01:33:29.403 CON[13865:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-06 01:33:29.415 CON[13865:80b] THREAD WARNING: ['AdMob'] took '20.028076' ms. Plugin should use a background thread.
+2014-12-06 01:33:29.416 CON[13865:80b] showAd
+2014-12-06 01:33:30.323 CON[13865:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-06 01:33:37.845 CON[13865:80b] itemtap [object Arguments]
+2014-12-06 01:33:38.821 CON[13865:80b] itemtap [object Arguments]
+2014-12-06 01:33:49.741 CON[13865:80b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-12-06 01:33:49.744 CON[13865:80b] THREAD WARNING: ['InAppBrowser'] took '23.934082' ms. Plugin should use a background thread.
+2014-12-06 01:49:13.302 CON[15568:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-06 01:49:13.304 CON[15568:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-06 01:49:13.312 CON[15568:80b] Unlimited access to network resources
+2014-12-06 01:49:13.316 CON[15568:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-06 01:49:13.351 CON[15568:80b] [CDVTimer][socialsharing] 14.907956ms
+2014-12-06 01:49:13.351 CON[15568:80b] [CDVTimer][TotalPluginStartup] 15.493989ms
+2014-12-06 01:49:13.477 CON[15568:80b] Resetting plugins due to page load.
+2014-12-06 01:49:14.991 CON[15568:80b] setOptions
+2014-12-06 01:49:14.992 CON[15568:80b] createBannerView
+2014-12-06 01:49:14.992 CON[15568:80b] __createBanner
+2014-12-06 01:49:15.000 CON[15568:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-06 01:49:15.013 CON[15568:80b] THREAD WARNING: ['AdMob'] took '20.902832' ms. Plugin should use a background thread.
+2014-12-06 01:49:15.014 CON[15568:80b] showAd
+2014-12-06 01:49:15.569 CON[15568:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-06 11:28:45.953 CON[5034:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-06 11:28:45.955 CON[5034:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-06 11:28:46.076 CON[5034:80b] Unlimited access to network resources
+2014-12-06 11:28:46.116 CON[5034:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-06 11:28:48.064 CON[5034:80b] [CDVTimer][socialsharing] 66.293001ms
+2014-12-06 11:28:48.064 CON[5034:80b] [CDVTimer][TotalPluginStartup] 66.879034ms
+2014-12-06 11:28:48.560 CON[5034:80b] Resetting plugins due to page load.
+2014-12-06 11:28:50.066 CON[5034:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-06 11:28:50.421 CON[5034:80b] setOptions
+2014-12-06 11:28:50.421 CON[5034:80b] createBannerView
+2014-12-06 11:28:50.422 CON[5034:80b] __createBanner
+2014-12-06 11:28:50.433 CON[5034:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-06 11:28:50.442 CON[5034:80b] THREAD WARNING: ['AdMob'] took '20.969238' ms. Plugin should use a background thread.
+2014-12-06 11:28:50.443 CON[5034:80b] showAd
+2014-12-06 11:28:54.238 CON[5034:80b] itemtap [object Arguments]
+2014-12-06 11:29:05.817 CON[5034:80b] Setting the WebView's frame to {{0, 0}, {320, 436}}
+2014-12-06 11:29:05.820 CON[5034:80b] THREAD WARNING: ['InAppBrowser'] took '174.337158' ms. Plugin should use a background thread.
+2014-12-06 16:03:48.956 CON[21761:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-06 16:03:49.005 CON[21761:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-06 16:03:49.739 CON[21761:80b] Unlimited access to network resources
+2014-12-06 16:03:49.774 CON[21761:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-06 16:03:53.180 CON[21761:80b] [CDVTimer][socialsharing] 197.440982ms
+2014-12-06 16:03:53.181 CON[21761:80b] [CDVTimer][TotalPluginStartup] 198.054969ms
+2014-12-06 16:03:53.762 CON[21761:80b] Resetting plugins due to page load.
+2014-12-06 16:03:55.408 CON[21761:80b] setOptions
+2014-12-06 16:03:55.409 CON[21761:80b] createBannerView
+2014-12-06 16:03:55.409 CON[21761:80b] __createBanner
+2014-12-06 16:03:55.417 CON[21761:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-06 16:03:55.426 CON[21761:80b] THREAD WARNING: ['AdMob'] took '17.294922' ms. Plugin should use a background thread.
+2014-12-06 16:03:55.427 CON[21761:80b] showAd
+2014-12-06 16:03:56.296 CON[21761:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-06 16:21:04.497 CON[24038:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-06 16:21:04.515 CON[24038:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-06 16:21:04.524 CON[24038:80b] Unlimited access to network resources
+2014-12-06 16:21:04.528 CON[24038:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-06 16:21:04.582 CON[24038:80b] [CDVTimer][socialsharing] 29.549003ms
+2014-12-06 16:21:04.586 CON[24038:80b] [CDVTimer][TotalPluginStartup] 33.612013ms
+2014-12-06 16:21:04.680 CON[24038:80b] Resetting plugins due to page load.
+2014-12-06 16:21:05.911 CON[24038:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-06 16:21:06.718 CON[24038:80b] setOptions
+2014-12-06 16:21:06.718 CON[24038:80b] createBannerView
+2014-12-06 16:21:06.719 CON[24038:80b] __createBanner
+2014-12-06 16:21:06.727 CON[24038:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-06 16:21:06.733 CON[24038:80b] THREAD WARNING: ['AdMob'] took '14.117188' ms. Plugin should use a background thread.
+2014-12-06 16:21:06.733 CON[24038:80b] showAd
+2014-12-06 16:21:48.203 CON[24038:7417] 16:21:48.203 ERROR:     AVAudioSessionUtilities.h:88: GetProperty_DefaultToZero: AudioSessionGetProperty ('disa') failed with error: '?ytp'
+2014-12-06 16:21:52.206 CON[24038:7417] 16:21:52.206 ERROR:     AVAudioSessionUtilities.h:88: GetProperty_DefaultToZero: AudioSessionGetProperty ('disa') failed with error: '?ytp'
+2014-12-06 17:01:29.477 CON[26671:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-06 17:01:29.480 CON[26671:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-06 17:01:29.489 CON[26671:80b] Unlimited access to network resources
+2014-12-06 17:01:29.494 CON[26671:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-06 17:01:29.613 CON[26671:80b] [CDVTimer][socialsharing] 91.013014ms
+2014-12-06 17:01:29.615 CON[26671:80b] [CDVTimer][TotalPluginStartup] 92.723966ms
+2014-12-06 17:01:29.734 CON[26671:80b] Resetting plugins due to page load.
+2014-12-06 17:01:30.810 CON[26671:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-06 17:01:32.420 CON[26671:80b] setOptions
+2014-12-06 17:01:32.420 CON[26671:80b] createBannerView
+2014-12-06 17:01:32.421 CON[26671:80b] __createBanner
+2014-12-06 17:01:32.430 CON[26671:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-06 17:01:32.435 CON[26671:80b] THREAD WARNING: ['AdMob'] took '14.330078' ms. Plugin should use a background thread.
+2014-12-06 17:01:32.436 CON[26671:80b] showAd
+2014-12-07 11:06:27.614 CON[7018:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-07 11:06:27.645 CON[7018:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-07 11:06:27.791 CON[7018:80b] Unlimited access to network resources
+2014-12-07 11:06:27.815 CON[7018:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-07 11:06:30.914 CON[7018:80b] [CDVTimer][socialsharing] 57.518959ms
+2014-12-07 11:06:30.915 CON[7018:80b] [CDVTimer][TotalPluginStartup] 58.215976ms
+2014-12-07 11:06:31.469 CON[7018:80b] Resetting plugins due to page load.
+2014-12-07 11:06:33.075 CON[7018:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-07 11:06:33.578 CON[7018:80b] setOptions
+2014-12-07 11:06:33.579 CON[7018:80b] createBannerView
+2014-12-07 11:06:33.579 CON[7018:80b] __createBanner
+2014-12-07 11:06:33.590 CON[7018:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-07 11:06:33.598 CON[7018:80b] THREAD WARNING: ['AdMob'] took '18.907959' ms. Plugin should use a background thread.
+2014-12-07 11:06:33.599 CON[7018:80b] showAd
+2014-12-07 11:26:19.751 CON[9417:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-07 11:26:19.754 CON[9417:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-07 11:26:19.765 CON[9417:80b] Unlimited access to network resources
+2014-12-07 11:26:19.769 CON[9417:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-07 11:26:19.832 CON[9417:80b] [CDVTimer][socialsharing] 36.926031ms
+2014-12-07 11:26:19.833 CON[9417:80b] [CDVTimer][TotalPluginStartup] 37.894011ms
+2014-12-07 11:26:19.979 CON[9417:80b] Resetting plugins due to page load.
+2014-12-07 11:26:20.966 CON[9417:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-07 11:26:22.248 CON[9417:80b] setOptions
+2014-12-07 11:26:22.248 CON[9417:80b] createBannerView
+2014-12-07 11:26:22.248 CON[9417:80b] __createBanner
+2014-12-07 11:26:22.258 CON[9417:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-07 11:26:22.263 CON[9417:80b] THREAD WARNING: ['AdMob'] took '14.683838' ms. Plugin should use a background thread.
+2014-12-07 11:26:22.264 CON[9417:80b] showAd
+2014-12-07 11:36:35.724 CON[10682:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-07 11:36:35.727 CON[10682:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-07 11:36:35.736 CON[10682:80b] Unlimited access to network resources
+2014-12-07 11:36:35.844 CON[10682:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-07 11:36:35.896 CON[10682:80b] [CDVTimer][socialsharing] 28.859019ms
+2014-12-07 11:36:35.897 CON[10682:80b] [CDVTimer][TotalPluginStartup] 29.829979ms
+2014-12-07 11:36:36.508 CON[10682:80b] Resetting plugins due to page load.
+2014-12-07 11:36:37.584 CON[10682:80b] setOptions
+2014-12-07 11:36:37.584 CON[10682:80b] createBannerView
+2014-12-07 11:36:37.584 CON[10682:80b] __createBanner
+2014-12-07 11:36:37.592 CON[10682:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-07 11:36:37.600 CON[10682:80b] THREAD WARNING: ['AdMob'] took '15.609131' ms. Plugin should use a background thread.
+2014-12-07 11:36:37.601 CON[10682:80b] showAd
+2014-12-07 11:37:00.177 CON[10682:80b] ext-title-2
+2014-12-07 11:37:00.177 CON[10682:80b] ext-title-3
+2014-12-07 11:37:03.422 CON[10682:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-07 17:32:17.451 CON[13258:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-07 17:32:17.483 CON[13258:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-07 17:32:17.636 CON[13258:80b] Unlimited access to network resources
+2014-12-07 17:32:17.702 CON[13258:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-07 17:32:19.939 CON[13258:80b] [CDVTimer][socialsharing] 93.749046ms
+2014-12-07 17:32:19.939 CON[13258:80b] [CDVTimer][TotalPluginStartup] 94.316006ms
+2014-12-07 17:32:20.440 CON[13258:80b] Resetting plugins due to page load.
+2014-12-07 17:32:22.310 CON[13258:80b] setOptions
+2014-12-07 17:32:22.311 CON[13258:80b] createBannerView
+2014-12-07 17:32:22.311 CON[13258:80b] __createBanner
+2014-12-07 17:32:22.318 CON[13258:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-07 17:32:22.322 CON[13258:80b] THREAD WARNING: ['AdMob'] took '11.058594' ms. Plugin should use a background thread.
+2014-12-07 17:32:22.323 CON[13258:80b] showAd
+2014-12-07 17:32:49.536 CON[13258:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-07 17:41:55.269 CON[14353:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-07 17:41:55.271 CON[14353:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-07 17:41:55.278 CON[14353:80b] Unlimited access to network resources
+2014-12-07 17:41:55.280 CON[14353:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-07 17:41:55.326 CON[14353:80b] [CDVTimer][socialsharing] 27.860045ms
+2014-12-07 17:41:55.327 CON[14353:80b] [CDVTimer][TotalPluginStartup] 28.409004ms
+2014-12-07 17:41:55.503 CON[14353:80b] Resetting plugins due to page load.
+2014-12-07 17:41:56.191 CON[14353:80b] setOptions
+2014-12-07 17:41:56.191 CON[14353:80b] createBannerView
+2014-12-07 17:41:56.192 CON[14353:80b] __createBanner
+2014-12-07 17:41:56.199 CON[14353:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-07 17:41:56.203 CON[14353:80b] THREAD WARNING: ['AdMob'] took '11.952881' ms. Plugin should use a background thread.
+2014-12-07 17:41:56.204 CON[14353:80b] showAd
+2014-12-07 12:57:32.010 CON[9594:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-07 12:57:32.099 CON[9594:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-07 12:57:32.492 CON[9594:80b] Unlimited access to network resources
+2014-12-07 12:57:32.526 CON[9594:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-07 12:57:34.821 CON[9594:80b] [CDVTimer][socialsharing] 86.252987ms
+2014-12-07 12:57:34.822 CON[9594:80b] [CDVTimer][TotalPluginStartup] 86.767018ms
+2014-12-07 12:57:35.214 CON[9594:80b] Resetting plugins due to page load.
+2014-12-07 12:57:36.647 CON[9594:80b] setOptions
+2014-12-07 12:57:36.647 CON[9594:80b] createBannerView
+2014-12-07 12:57:36.647 CON[9594:80b] __createBanner
+2014-12-07 12:57:36.654 CON[9594:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-07 12:57:36.659 CON[9594:80b] THREAD WARNING: ['AdMob'] took '11.521240' ms. Plugin should use a background thread.
+2014-12-07 12:57:36.659 CON[9594:80b] showAd
+2014-12-08 10:43:01.072 CON[1984:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-08 10:43:01.108 CON[1984:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-08 10:43:01.764 CON[1984:80b] Unlimited access to network resources
+2014-12-08 10:43:01.845 CON[1984:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-08 10:43:04.953 CON[1984:80b] [CDVTimer][socialsharing] 111.435950ms
+2014-12-08 10:43:04.953 CON[1984:80b] [CDVTimer][TotalPluginStartup] 112.079024ms
+2014-12-08 10:43:05.442 CON[1984:80b] Resetting plugins due to page load.
+2014-12-08 10:43:07.254 CON[1984:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-08 10:43:08.426 CON[1984:80b] setOptions
+2014-12-08 10:43:08.426 CON[1984:80b] createBannerView
+2014-12-08 10:43:08.426 CON[1984:80b] __createBanner
+2014-12-08 10:43:08.526 CON[1984:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-08 10:43:08.530 CON[1984:80b] THREAD WARNING: ['AdMob'] took '104.048096' ms. Plugin should use a background thread.
+2014-12-08 10:43:08.531 CON[1984:80b] showAd
+2014-12-08 11:54:49.141 CON[9143:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-08 11:54:49.144 CON[9143:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-08 11:54:49.153 CON[9143:80b] Unlimited access to network resources
+2014-12-08 11:54:49.158 CON[9143:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-08 11:54:49.217 CON[9143:80b] [CDVTimer][socialsharing] 26.489019ms
+2014-12-08 11:54:49.218 CON[9143:80b] [CDVTimer][TotalPluginStartup] 27.130008ms
+2014-12-08 11:54:49.358 CON[9143:80b] Resetting plugins due to page load.
+2014-12-08 11:54:49.867 CON[9143:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-08 11:54:50.527 CON[9143:80b] setOptions
+2014-12-08 11:54:50.528 CON[9143:80b] createBannerView
+2014-12-08 11:54:50.528 CON[9143:80b] __createBanner
+2014-12-08 11:54:50.537 CON[9143:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-08 11:54:50.542 CON[9143:80b] THREAD WARNING: ['AdMob'] took '13.896973' ms. Plugin should use a background thread.
+2014-12-08 11:54:50.543 CON[9143:80b] showAd
+2014-12-11 11:31:00.305 CON[3716:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 11:31:00.324 CON[3716:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 11:31:00.818 CON[3716:80b] Unlimited access to network resources
+2014-12-11 11:31:00.821 CON[3716:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 11:31:03.285 CON[3716:80b] [CDVTimer][socialsharing] 66.296041ms
+2014-12-11 11:31:03.286 CON[3716:80b] [CDVTimer][TotalPluginStartup] 66.953003ms
+2014-12-11 11:31:03.875 CON[3716:80b] Resetting plugins due to page load.
+2014-12-11 11:31:04.964 CON[3716:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 11:31:53.830 CON[3716:3c03] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-12-11 11:35:30.942 CON[4555:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 11:35:30.944 CON[4555:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 11:35:30.954 CON[4555:80b] Unlimited access to network resources
+2014-12-11 11:35:30.958 CON[4555:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 11:35:31.013 CON[4555:80b] [CDVTimer][socialsharing] 29.685020ms
+2014-12-11 11:35:31.014 CON[4555:80b] [CDVTimer][TotalPluginStartup] 30.346990ms
+2014-12-11 11:35:31.245 CON[4555:80b] Resetting plugins due to page load.
+2014-12-11 11:35:31.662 CON[4555:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 11:39:31.294 CON[5263:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 11:39:31.298 CON[5263:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 11:39:31.308 CON[5263:80b] Unlimited access to network resources
+2014-12-11 11:39:31.311 CON[5263:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 11:39:31.356 CON[5263:80b] [CDVTimer][socialsharing] 24.863958ms
+2014-12-11 11:39:31.356 CON[5263:80b] [CDVTimer][TotalPluginStartup] 25.397956ms
+2014-12-11 11:39:31.599 CON[5263:80b] Resetting plugins due to page load.
+2014-12-11 11:39:32.058 CON[5263:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 11:39:36.222 CON[5263:80b] setOptions
+2014-12-11 11:39:36.222 CON[5263:80b] createBannerView
+2014-12-11 11:39:36.223 CON[5263:80b] __createBanner
+2014-12-11 11:39:36.232 CON[5263:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 11:39:36.237 CON[5263:80b] THREAD WARNING: ['AdMob'] took '14.676025' ms. Plugin should use a background thread.
+2014-12-11 11:39:36.238 CON[5263:80b] showAd
+2014-12-11 11:42:11.750 CON[5892:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 11:42:11.753 CON[5892:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 11:42:11.762 CON[5892:80b] Unlimited access to network resources
+2014-12-11 11:42:11.766 CON[5892:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 11:42:11.817 CON[5892:80b] [CDVTimer][socialsharing] 29.187977ms
+2014-12-11 11:42:11.818 CON[5892:80b] [CDVTimer][TotalPluginStartup] 30.101001ms
+2014-12-11 11:42:12.039 CON[5892:80b] Resetting plugins due to page load.
+2014-12-11 11:42:12.632 CON[5892:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 11:48:29.824 CON[5892:3c03] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-12-11 11:48:31.501 CON[5892:80b] setOptions
+2014-12-11 11:48:31.501 CON[5892:80b] createBannerView
+2014-12-11 11:48:31.501 CON[5892:80b] __createBanner
+2014-12-11 11:48:31.506 CON[5892:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 11:48:31.510 CON[5892:80b] showAd
+2014-12-11 11:49:36.963 CON[6803:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 11:49:36.966 CON[6803:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 11:49:36.974 CON[6803:80b] Unlimited access to network resources
+2014-12-11 11:49:36.978 CON[6803:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 11:49:37.029 CON[6803:80b] [CDVTimer][socialsharing] 28.221965ms
+2014-12-11 11:49:37.030 CON[6803:80b] [CDVTimer][TotalPluginStartup] 28.984010ms
+2014-12-11 11:49:37.248 CON[6803:80b] Resetting plugins due to page load.
+2014-12-11 11:49:37.595 CON[6803:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 11:49:43.085 CON[6803:80b] setOptions
+2014-12-11 11:49:43.085 CON[6803:80b] createBannerView
+2014-12-11 11:49:43.085 CON[6803:80b] __createBanner
+2014-12-11 11:49:43.093 CON[6803:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 11:49:43.097 CON[6803:80b] THREAD WARNING: ['AdMob'] took '12.440918' ms. Plugin should use a background thread.
+2014-12-11 11:49:43.098 CON[6803:80b] showAd
+2014-12-11 11:53:34.170 CON[7512:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 11:53:34.177 CON[7512:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 11:53:34.190 CON[7512:80b] Unlimited access to network resources
+2014-12-11 11:53:34.194 CON[7512:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 11:53:34.251 CON[7512:80b] [CDVTimer][socialsharing] 30.448973ms
+2014-12-11 11:53:34.262 CON[7512:80b] [CDVTimer][TotalPluginStartup] 41.630030ms
+2014-12-11 11:53:34.480 CON[7512:80b] Resetting plugins due to page load.
+2014-12-11 11:53:34.826 CON[7512:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 11:53:39.426 CON[7512:80b] setOptions
+2014-12-11 11:53:39.426 CON[7512:80b] createBannerView
+2014-12-11 11:53:39.426 CON[7512:80b] __createBanner
+2014-12-11 11:53:39.433 CON[7512:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 11:53:39.438 CON[7512:80b] THREAD WARNING: ['AdMob'] took '11.874023' ms. Plugin should use a background thread.
+2014-12-11 11:53:39.439 CON[7512:80b] showAd
+2014-12-11 11:54:17.481 CON[7512:80b] *** Assertion failure in -[UIApplication runModal:](), /SourceCache/UIKit_Sim/UIKit-2903.23/UIApplication.m:9465
+2014-12-11 11:54:17.516 CON[7512:80b] *** WebKit discarded an uncaught exception in the webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame: delegate: <NSInternalInconsistencyException> The view passed in does not have a window.
+2014-12-11 11:55:31.439 CON[8114:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 11:55:31.441 CON[8114:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 11:55:31.450 CON[8114:80b] Unlimited access to network resources
+2014-12-11 11:55:31.454 CON[8114:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 11:55:31.508 CON[8114:80b] [CDVTimer][socialsharing] 26.450038ms
+2014-12-11 11:55:31.508 CON[8114:80b] [CDVTimer][TotalPluginStartup] 26.960969ms
+2014-12-11 11:55:31.747 CON[8114:80b] Resetting plugins due to page load.
+2014-12-11 11:55:32.594 CON[8114:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 11:55:42.769 CON[8114:3b03] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-12-11 11:55:42.928 CON[8114:80b] setOptions
+2014-12-11 11:55:42.928 CON[8114:80b] createBannerView
+2014-12-11 11:55:42.928 CON[8114:80b] __createBanner
+2014-12-11 11:55:42.935 CON[8114:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 11:55:42.939 CON[8114:80b] THREAD WARNING: ['AdMob'] took '10.555908' ms. Plugin should use a background thread.
+2014-12-11 11:55:42.940 CON[8114:80b] showAd
+2014-12-11 12:01:32.519 CON[8952:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 12:01:32.527 CON[8952:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 12:01:32.536 CON[8952:80b] Unlimited access to network resources
+2014-12-11 12:01:32.548 CON[8952:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 12:01:32.625 CON[8952:80b] [CDVTimer][socialsharing] 28.226018ms
+2014-12-11 12:01:32.625 CON[8952:80b] [CDVTimer][TotalPluginStartup] 28.950989ms
+2014-12-11 12:01:32.882 CON[8952:80b] Resetting plugins due to page load.
+2014-12-11 12:01:33.246 CON[8952:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 12:01:33.532 CON[8952:80b] setOptions
+2014-12-11 12:01:33.532 CON[8952:80b] createBannerView
+2014-12-11 12:01:33.532 CON[8952:80b] __createBanner
+2014-12-11 12:01:33.540 CON[8952:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 12:01:33.545 CON[8952:80b] THREAD WARNING: ['AdMob'] took '12.781738' ms. Plugin should use a background thread.
+2014-12-11 12:01:33.546 CON[8952:80b] showAd
+2014-12-11 12:06:19.713 CON[9712:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 12:06:19.715 CON[9712:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 12:06:19.722 CON[9712:80b] Unlimited access to network resources
+2014-12-11 12:06:19.724 CON[9712:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 12:06:19.771 CON[9712:80b] [CDVTimer][socialsharing] 27.306974ms
+2014-12-11 12:06:19.773 CON[9712:80b] [CDVTimer][TotalPluginStartup] 28.654039ms
+2014-12-11 12:06:20.003 CON[9712:80b] Resetting plugins due to page load.
+2014-12-11 12:06:20.724 CON[9712:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 12:06:21.053 CON[9712:80b] setOptions
+2014-12-11 12:06:21.053 CON[9712:80b] createBannerView
+2014-12-11 12:06:21.053 CON[9712:80b] __createBanner
+2014-12-11 12:06:21.073 CON[9712:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 12:06:21.079 CON[9712:80b] THREAD WARNING: ['AdMob'] took '25.757080' ms. Plugin should use a background thread.
+2014-12-11 12:06:21.080 CON[9712:80b] showAd
+2014-12-11 12:07:55.229 CON[10287:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 12:07:55.243 CON[10287:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 12:07:55.262 CON[10287:80b] Unlimited access to network resources
+2014-12-11 12:07:55.268 CON[10287:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 12:07:55.438 CON[10287:80b] [CDVTimer][socialsharing] 68.541050ms
+2014-12-11 12:07:55.439 CON[10287:80b] [CDVTimer][TotalPluginStartup] 69.203973ms
+2014-12-11 12:07:55.722 CON[10287:80b] Resetting plugins due to page load.
+2014-12-11 12:07:56.037 CON[10287:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 12:07:56.387 CON[10287:80b] setOptions
+2014-12-11 12:07:56.387 CON[10287:80b] createBannerView
+2014-12-11 12:07:56.387 CON[10287:80b] __createBanner
+2014-12-11 12:07:56.395 CON[10287:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 12:07:56.400 CON[10287:80b] THREAD WARNING: ['AdMob'] took '12.570068' ms. Plugin should use a background thread.
+2014-12-11 12:07:56.401 CON[10287:80b] showAd
+2014-12-11 12:09:38.138 CON[10894:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 12:09:38.144 CON[10894:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 12:09:38.156 CON[10894:80b] Unlimited access to network resources
+2014-12-11 12:09:38.160 CON[10894:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 12:09:38.217 CON[10894:80b] [CDVTimer][socialsharing] 29.241025ms
+2014-12-11 12:09:38.217 CON[10894:80b] [CDVTimer][TotalPluginStartup] 29.940009ms
+2014-12-11 12:09:38.477 CON[10894:80b] Resetting plugins due to page load.
+2014-12-11 12:09:39.245 CON[10894:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 12:09:39.511 CON[10894:80b] setOptions
+2014-12-11 12:09:39.512 CON[10894:80b] createBannerView
+2014-12-11 12:09:39.512 CON[10894:80b] __createBanner
+2014-12-11 12:09:39.520 CON[10894:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 12:09:39.525 CON[10894:80b] THREAD WARNING: ['AdMob'] took '13.089844' ms. Plugin should use a background thread.
+2014-12-11 12:09:39.525 CON[10894:80b] showAd
+2014-12-11 12:10:44.845 CON[11436:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 12:10:44.850 CON[11436:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 12:10:44.859 CON[11436:80b] Unlimited access to network resources
+2014-12-11 12:10:44.863 CON[11436:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 12:10:44.911 CON[11436:80b] [CDVTimer][socialsharing] 26.081979ms
+2014-12-11 12:10:44.911 CON[11436:80b] [CDVTimer][TotalPluginStartup] 26.762009ms
+2014-12-11 12:10:45.169 CON[11436:80b] Resetting plugins due to page load.
+2014-12-11 12:10:45.817 CON[11436:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 12:10:46.219 CON[11436:80b] setOptions
+2014-12-11 12:10:46.220 CON[11436:80b] createBannerView
+2014-12-11 12:10:46.220 CON[11436:80b] __createBanner
+2014-12-11 12:10:46.228 CON[11436:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 12:10:46.233 CON[11436:80b] THREAD WARNING: ['AdMob'] took '13.159912' ms. Plugin should use a background thread.
+2014-12-11 12:10:46.234 CON[11436:80b] showAd
+2014-12-11 12:14:24.376 CON[12176:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 12:14:24.380 CON[12176:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 12:14:24.389 CON[12176:80b] Unlimited access to network resources
+2014-12-11 12:14:24.397 CON[12176:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 12:14:24.465 CON[12176:80b] [CDVTimer][socialsharing] 30.740976ms
+2014-12-11 12:14:24.465 CON[12176:80b] [CDVTimer][TotalPluginStartup] 31.435013ms
+2014-12-11 12:14:24.788 CON[12176:80b] Resetting plugins due to page load.
+2014-12-11 12:14:25.274 CON[12176:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 12:16:06.340 CON[12176:3d03] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2014-12-11 12:16:06.500 CON[12176:80b] setOptions
+2014-12-11 12:16:06.501 CON[12176:80b] createBannerView
+2014-12-11 12:16:06.501 CON[12176:80b] __createBanner
+2014-12-11 12:16:06.507 CON[12176:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 12:16:06.511 CON[12176:80b] showAd
+2014-12-11 12:17:19.619 CON[12827:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 12:17:19.623 CON[12827:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 12:17:19.632 CON[12827:80b] Unlimited access to network resources
+2014-12-11 12:17:19.636 CON[12827:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 12:17:19.690 CON[12827:80b] [CDVTimer][socialsharing] 28.632998ms
+2014-12-11 12:17:19.691 CON[12827:80b] [CDVTimer][TotalPluginStartup] 29.293001ms
+2014-12-11 12:17:19.936 CON[12827:80b] Resetting plugins due to page load.
+2014-12-11 12:17:20.237 CON[12827:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 12:17:23.469 CON[12827:80b] setOptions
+2014-12-11 12:17:23.470 CON[12827:80b] createBannerView
+2014-12-11 12:17:23.470 CON[12827:80b] __createBanner
+2014-12-11 12:17:23.477 CON[12827:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 12:17:23.481 CON[12827:80b] THREAD WARNING: ['AdMob'] took '11.665039' ms. Plugin should use a background thread.
+2014-12-11 12:17:23.482 CON[12827:80b] showAd
+2014-12-11 13:22:47.374 CON[26448:80b] Apache Cordova native platform version 3.6.3 is starting.
+2014-12-11 13:22:47.376 CON[26448:80b] Multi-tasking -> Device: YES, App: YES
+2014-12-11 13:22:47.386 CON[26448:80b] Unlimited access to network resources
+2014-12-11 13:22:47.389 CON[26448:80b] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+
+2014-12-11 13:22:47.440 CON[26448:80b] [CDVTimer][socialsharing] 26.372969ms
+2014-12-11 13:22:47.440 CON[26448:80b] [CDVTimer][TotalPluginStartup] 26.985049ms
+2014-12-11 13:22:47.552 CON[26448:80b] Resetting plugins due to page load.
+2014-12-11 13:22:48.073 CON[26448:80b] Finished load of: file:///Users/walkingtree/Library/Developer/CoreSimulator/Devices/853DB709-293B-4786-9CE3-ED39974DD481/data/Applications/593581F7-55C0-4938-B14E-68A84EAC9507/CON.app/www/index.html
+2014-12-11 13:22:48.501 CON[26448:80b] setOptions
+2014-12-11 13:22:48.501 CON[26448:80b] createBannerView
+2014-12-11 13:22:48.501 CON[26448:80b] __createBanner
+2014-12-11 13:22:48.509 CON[26448:80b] <Google> To get test ads on this device, call: request.testDevices = @[ GAD_SIMULATOR_ID ];
+2014-12-11 13:22:48.515 CON[26448:80b] THREAD WARNING: ['AdMob'] took '13.692871' ms. Plugin should use a background thread.
+2014-12-11 13:22:48.515 CON[26448:80b] showAd

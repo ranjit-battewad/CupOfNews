@@ -1,0 +1,70 @@
+{
+   "name": "CON",
+   "indexHtmlPath": "index.html",
+   "url": null,
+   "js": [
+      {
+         "path": "cordova.js",
+         "remote": true
+      },
+      {
+         "path": "touch/sencha-touch.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "bootstrap.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "app.js",
+         "bundle": true,
+         "update": "delta"
+      },
+      {
+         "path": "wtc/ux/Cover.js"
+      },
+      {
+         "path": "app/index.js"
+      },
+      {
+         "path": "app/index.js",
+         "remote": true
+      }
+   ],
+   "css": [
+      {
+         "update": "delta",
+         "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+         ],
+         "theme": "Default",
+         "path": "theme/sencha-touch-97a283f1-1793-4535-a495-cf39e79573ad.css",
+         "_architect_active_theme": true
+      }
+   ],
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [
+      "resources/images",
+      "resources/project-images",
+      "resources/icons",
+      "resources/startup",
+      "resources/data"
+   ],
+   "ignore": [
+      ".svn$"
+   ],
+   "archivePath": "archive",
+   "requires": [],
+   "id": "258e7674-5f4a-4f31-8ea1-609eb3947f99",
+   "classpath": "${app.dir}/app,${app.dir}/wtc/ux/,${app.dir}/app/"
+}

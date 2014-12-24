@@ -1,0 +1,1291 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main"
+    },
+    "designerId": "571c00ac-67e1-4d07-aaa2-696352aa6480",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainNav",
+                "selector": "navigationview#mynavigationview"
+            },
+            "designerId": "529583e7-7f2d-44a8-8d38-a464ca3f9103"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoCreate": true,
+                "ref": "catNewsList",
+                "selector": "list#catnewslist",
+                "xtype": "catnewslist"
+            },
+            "designerId": "d07688bb-a0bc-4868-be80-8c2b61c55a82"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "view",
+                    "title"
+                ],
+                "fn": "pushView",
+                "implHandler": [
+                    "var mainNavView = this.getMainNav();",
+                    "",
+                    "if(!Ext.isEmpty(mainNavView)){",
+                    "",
+                    "    if(view.xtype == 'pubdetail'){",
+                    "",
+                    "        this.enableGotoSiteBtn(view.getData());",
+                    "  }",
+                    "",
+                    "    mainNavView.push(view,CON.app.title);",
+                    "",
+                    "}"
+                ]
+            },
+            "designerId": "05de2d97-650a-445c-9caa-28aea2c7f6b5"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "settingdbtn",
+                "selector": "button#settingdbtn"
+            },
+            "designerId": "5924b884-1707-4c97-8249-f6bca1faddd6"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "container",
+                "designer|params": [
+                    "container"
+                ],
+                "designer|targetType": "category.ListCover",
+                "fn": "onContainerCatItemTapped",
+                "implHandler": [
+                    ""
+                ],
+                "name": "catItemTapped"
+            },
+            "designerId": "fb4f4759-3486-44f6-91fd-e0d68530a4b1"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "application"
+                ],
+                "fn": "init",
+                "implHandler": [
+                    "CON.app.on('catItemTapped', function(cover, idx) {",
+                    "        this.handleCategoryCoverItemTap(cover, idx);",
+                    "}, this);",
+                    "",
+                    "//this.changeFavicon('resources/images/favicon.jpg');"
+                ]
+            },
+            "designerId": "92339b69-d6b8-4acc-8f12-3dc2370d987a"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "cover",
+                    "idx"
+                ],
+                "fn": "handleCategoryCoverItemTap",
+                "implHandler": [
+                    "var cateStore=Ext.getStore(\"CategoryList\");",
+                    "var cateStore1=cateStore.getAt(idx);",
+                    "var catid=(cateStore1.get(\"id\"));",
+                    "var name=(cateStore1.get(\"name\"));",
+                    "var categoryPub=Ext.getStore(\"CategoryPublications\");",
+                    "categoryPub.clearFilter();",
+                    "        categoryPub.filterBy(function(rec) {",
+                    "            //alert(parseInt(rec.get(\"categoryId\")) +\"==\"+ parseInt(catid));",
+                    "",
+                    "                       //alert(parseInt(rec.get(\"categoryId\")) == parseInt(catid));",
+                    "                          return  (parseInt(rec.get(\"categoryId\")) == parseInt(catid) && (parseInt(rec.get(\"isActive\")) == 1));",
+                    "         });",
+                    "        var recordItems = categoryPub.data.items;",
+                    "        var newrecords=[];",
+                    "        for(var i=categoryPub.getCount()-1; i>=0;i--){",
+                    "",
+                    "                       newrecords.push(recordItems[i].getData());",
+                    "        }",
+                    "",
+                    "//alert(JSON.stringify(newrecords));",
+                    "",
+                    "if(!Ext.isEmpty(categoryPub) && idx > -1){",
+                    "",
+                    "",
+                    "",
+                    "    var newsPubListView = Ext.create('CON.view.category.PubNewsList',{",
+                    "",
+                    "        pubData : newrecords,",
+                    "        title:name",
+                    " });",
+                    "",
+                    "",
+                    "CON.app.getController(\"Main\").pushView(newsPubListView, name);",
+                    "",
+                    "}",
+                    "",
+                    ""
+                ]
+            },
+            "designerId": "b12a3b72-d296-4534-a57c-96bb7d1e4a46"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "gotowebsiteBtn",
+                "selector": "button#gotowebsiteBtn"
+            },
+            "designerId": "943795f4-4daf-462d-9b36-a4e00ff565d8"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#gotowebsiteBtn",
+                "designer|targetType": "Ext.Button",
+                "fn": "onGoToSiteBtnTap",
+                "implHandler": [
+                    "var link = button.siteUrl;",
+                    "var touchdevice = ('ontouchstart' in window) ? true : false;",
+                    "var app = document.URL.indexOf( 'http://' ) === -1 && document.URL.indexOf( 'https://' ) === -1;",
+                    "",
+                    "",
+                    "",
+                    "if(!Ext.isEmpty(link)){",
+                    "   if(app)",
+                    "   window.open(button.siteUrl,'_blank','location=no');",
+                    "   else",
+                    "   window.open(button.siteUrl,'_blank');",
+                    "",
+                    "}",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "designerId": "bbfca6ae-f16b-470e-b52f-1c150140f40b"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "data"
+                ],
+                "fn": "enableGotoSiteBtn",
+                "implHandler": [
+                    "var goToWebSiteBtn = this.getGotowebsiteBtn();",
+                    "",
+                    "if(!Ext.isEmpty(goToWebSiteBtn)){",
+                    "",
+                    "    goToWebSiteBtn.setHidden(false);",
+                    "    var publicationNewsLink = data.link;",
+                    "    goToWebSiteBtn.siteUrl = publicationNewsLink;",
+                    "",
+                    "}"
+                ]
+            },
+            "designerId": "56bf7c06-5f3b-4a5f-89dc-927c91807c68"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "navigationview#mynavigationview",
+                "designer|targetType": "Ext.navigation.View",
+                "fn": "onNavigationviewBack",
+                "implHandler": [
+                    "var goToWebSiteBtn = this.getGotowebsiteBtn();",
+                    "",
+                    "",
+                    "",
+                    "if(!Ext.isEmpty(goToWebSiteBtn)){",
+                    "",
+                    "    goToWebSiteBtn.setHidden(true);",
+                    "",
+                    "var audioPlay=Ext.getCmp(\"audioPlay\");",
+                    "audioPlay.setHidden(true);",
+                    "",
+                    "}",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "Ext.select('.con-listitemcls').each(function(el){",
+                    "                            el.removeCls(\"con-listitem-selectedcls\");",
+                    "                         });",
+                    "//alert(this.getPublicationCatNewsList());",
+                    "//this.getPublicationCatNewsList().deselectAll();",
+                    "",
+                    "Ext.Viewport.remove(panel);"
+                ],
+                "name": "back"
+            },
+            "designerId": "52fe3091-fc4a-4db9-931c-27b21a7560ca"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "userprefbtn",
+                "selector": "button#userprefbtn"
+            },
+            "designerId": "7774ce39-7d76-4f2d-a913-896f442258ed"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#userprefbtn",
+                "designer|targetType": "Ext.Button",
+                "fn": "onUserPrefButtonTap",
+                "implHandler": [
+                    "",
+                    "",
+                    "",
+                    "Ext.Viewport.toggleMenu('right');",
+                    "",
+                    "",
+                    "/*",
+                    "var newsSettings=window.localStorage.getItem(\"newsSettings\");",
+                    "",
+                    "",
+                    "var setup=JSON.parse(newsSettings);",
+                    "var me=this;",
+                    "",
+                    "if(me.getToi()){",
+                    "",
+                    "   if(setup.toi == true){",
+                    "      me.getToi().setValue(1);",
+                    "   }else{",
+                    "       me.getToi().setValue(0);",
+                    "   }",
+                    "}",
+                    "if(me.getHin){",
+                    "   if(setup.hin == true){",
+                    "     me.getHin().setValue(1);",
+                    "   }else{",
+                    "      me.getHin().setValue(0);",
+                    "  }",
+                    "}",
+                    "if(me.getReut()){",
+                    "   if(setup.ret == true){",
+                    "     me.getReut().setValue(1);",
+                    "   }else{",
+                    "      me.getReut().setValue(0);",
+                    "   }",
+                    "}",
+                    "",
+                    "if(me.getIexp()){",
+                    "  if(setup.ine == true){",
+                    "     me.getIexp().setValue(1);",
+                    "  }else{",
+                    "      me.getIexp().setValue(0);",
+                    "  }",
+                    "}",
+                    "if(me.getEct()){",
+                    "",
+                    "   if(setup.ect == true){",
+                    "",
+                    "   me.getEct().setValue(1);",
+                    "",
+                    "  }else{",
+                    "      me.getEct().setValue(0);",
+                    "   }",
+                    "}",
+                    "",
+                    "*/",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "designerId": "461b1c65-63b2-4167-9808-e0d0f12f0717"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "",
+                    "var menu = Ext.create('CON.view.MyMenu',{});",
+                    "var me=this;",
+                    "",
+                    "Ext.Viewport.setMenu(menu, {",
+                    "            side: 'right',",
+                    "            reveal: false,",
+                    "            cover:true",
+                    "        });",
+                    "var touchdevice = ('ontouchstart' in window) ? true : false;",
+                    "var app = document.URL.indexOf( 'http://' ) === -1 && document.URL.indexOf( 'https://' ) === -1;",
+                    "if(app){",
+                    "",
+                    "    document.addEventListener(\"deviceready\", function(){",
+                    "",
+                    "",
+                    "document.addEventListener(\"online\", function(){}, false);",
+                    "document.addEventListener(\"offline\", function(){me.checkConnection ();}, false);",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "                                                   }, false);",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "}",
+                    "Ext.select('.admob').each(function(el){",
+                    "         el.dom.innerHTML=\"\";",
+                    "",
+                    "     });",
+                    "var me=this;",
+                    "",
+                    "if(!app){",
+                    "    clearInterval(timerAdmob);",
+                    "var inta=0;",
+                    "",
+                    " timerAdmob=setInterval(function(){",
+                    "",
+                    "me.getFootertoolbar().show();",
+                    "",
+                    "     Ext.select('.admob').each(function(el){",
+                    "         var admobBann=['<center><a href=\"javascript:CON.app.openAdmobSite();\" ><img src=\"resources/project-images/selectpartneradd.png\"></a></center> ','<div class=\"admob\"><center><a href=\"javascript:CON.app.openAdmobSite();\"><img src=\"resources/project-images/senchatutorials.png\"/></a></center></div>','<div class=\"admob\"><center><a href=\"javascript:CON.app.openAdmobSite();\"><img src=\"resources/project-images/trainingpartneradd.png\"/></a></center></div>'];",
+                    "         inta++;",
+                    "         if(inta === 3){",
+                    "            inta=0;",
+                    "         }",
+                    "",
+                    "",
+                    "",
+                    "    el.dom.innerHTML=admobBann[inta];",
+                    "",
+                    "                         });",
+                    "",
+                    " }, 5000);",
+                    "",
+                    "",
+                    "}",
+                    "",
+                    "document.addEventListener('mouseup', function(e){",
+                    "     Ext.Viewport.remove(panel);",
+                    "",
+                    "                                                     if (window.getSelection) {",
+                    "",
+                    "            var val=(window.getSelection().toString());",
+                    "                                                         var text=(window.getSelection().toString());",
+                    "",
+                    "                                                                                                                                                            if (window.getSelection) {",
+                    "                                                                              if (window.getSelection().empty) {  // Chrome",
+                    "                                                                                window.getSelection().empty();",
+                    "                                                                              } else if (window.getSelection().removeAllRanges) {  // Firefox",
+                    "                                                                                window.getSelection().removeAllRanges();",
+                    "                                                                              }",
+                    "                                                                            } else if (document.selection) {  // IE?",
+                    "                                                                              document.selection.empty();",
+                    "                                                                            }",
+                    "                                                         if(val !== \"\"){",
+                    "                                                              Ext.Viewport.remove(panel);",
+                    "                                                             panel=Ext.create('Ext.Panel',{",
+                    "                                                               itemId:'floatingPanel',",
+                    "                                                               cls:'chartfloatingpanel-cls',",
+                    "                                                               top:e.y,",
+                    "                                                               left:e.x-100,",
+                    "                                                               width: 180,",
+                    "                                                               minHeight: 50,",
+                    "                                                                 items:[",
+                    "                                                                     {",
+                    "                                                                         xtype:\"button\",",
+                    "",
+                    "                                                                         text:\"Add to Dictionary\",",
+                    "                                                                         dock:\"bottom\",",
+                    "                                                                         handler : function(){",
+                    "",
+                    "                                                                             Ext.Viewport.remove(panel);",
+                    "                                                                            var DictonaryStore= Ext.getStore(\"Dictonary\");",
+                    "                                                                var test= Ext.encode(Ext.getStore('Dictonary').getProxy().getReader().rawData);",
+                    "",
+                    "                                                                 if(test === 'null'){",
+                    "                                                                 var recordjson=[];",
+                    "",
+                    "                                                                 var json={\"id\":new Date().getTime(),\"word\":text};",
+                    "                                                                 recordjson.push(json);",
+                    "",
+                    "                                                                  DictonaryStore.setData(recordjson);",
+                    "",
+                    "                                                                                window.localStorage.setItem(\"DictionaryArray\",JSON.stringify(recordjson));",
+                    "",
+                    "",
+                    "                                                                     }else{",
+                    "                                                                        var recordjson=JSON.parse(test);",
+                    "                                                                          var json={\"id\":new Date().getTime(),\"word\":text};",
+                    "                                                                 recordjson.push(json);",
+                    "",
+                    "                                                                         DictonaryStore.setData(recordjson);",
+                    "",
+                    "                                                                                window.localStorage.setItem(\"DictionaryArray\",JSON.stringify(recordjson));",
+                    "",
+                    "",
+                    "                                                                              }",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "                                                                         }",
+                    "",
+                    "                                                                     }",
+                    "                                                                 ]",
+                    "",
+                    "                                                           });",
+                    "                                                             panel.setHtml('<div style=\"text-align:justify;\">'+val+'</div>');",
+                    "                                                           Ext.Viewport.add(panel);",
+                    "                                                       }",
+                    "                                                     }",
+                    "                                                      });",
+                    "",
+                    "var localStore = Ext.getStore('localData');",
+                    "",
+                    " localStore.load();",
+                    "//alert(localStorage.getItem('localDataStore'));",
+                    "if(localStore.getCount() === 0){",
+                    "",
+                    "    var newsSettings1={\"newssettings\":[{\"test\":true}]};",
+                    "",
+                    "",
+                    "    var data = Ext.create('CON.model.localData',newsSettings1);",
+                    "    localStore.add(data);",
+                    "    localStore.sync();",
+                    "",
+                    "//alert(localStorage.getItem('localDataStore'));",
+                    "    me.onNewsSettings();",
+                    "}else{",
+                    "         me.onNewsSettings();",
+                    "}",
+                    "if(app){",
+                    "    this.initAd();",
+                    "}",
+                    "",
+                    ""
+                ]
+            },
+            "designerId": "9766236f-71ba-4a3a-b809-2e188a567a9e",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "onNewsSettings",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initAd",
+                "implHandler": [
+                    "if ( window.plugins && window.plugins.AdMob ) {",
+                    "",
+                    "                    \t    var ad_units = {",
+                    "                \t\t\t\tios : {",
+                    "                \t\t\t\t\tbanner: 'ca-app-pub-6938123967733607/9990289776',",
+                    "                \t\t\t\t\tinterstitial: 'ca-app-pub-6869992474017983/7563979554'",
+                    "                \t\t\t\t},",
+                    "                \t\t\t\tandroid : {",
+                    "                \t\t\t\t\tbanner: 'ca-app-pub-6938123967733607/3943756175',",
+                    "                \t\t\t\t\tinterstitial: 'ca-app-pub-6938123967733607/4602367770'",
+                    "                \t\t\t\t},",
+                    "                \t\t\t\twp8 : {",
+                    "                \t\t\t\t\tbanner: 'ca-app-pub-6869992474017983/8878394753',",
+                    "                \t\t\t\t\tinterstitial: 'ca-app-pub-6869992474017983/1355127956'",
+                    "                \t\t\t\t}",
+                    "                    \t    };",
+                    "                    \t    var admobid = \"\";",
+                    "                    \t    if( /(android)/i.test(navigator.userAgent) ) {",
+                    "                    \t    \tadmobid = ad_units.android;",
+                    "                    \t    } else if(/(iphone|ipad)/i.test(navigator.userAgent)) {",
+                    "                    \t    \tadmobid = ad_units.ios;",
+                    "                    \t    } else {",
+                    "                    \t    \tadmobid = ad_units.wp8;",
+                    "                    \t    }",
+                    "",
+                    "                            window.plugins.AdMob.setOptions( {",
+                    "                                publisherId: admobid.banner,",
+                    "                                interstitialAdId: admobid.interstitial,",
+                    "                                bannerAtTop: false, // set to true, to put banner at top",
+                    "                                overlap: false, // set to true, to allow banner overlap webview",
+                    "                                offsetTopBar: false, // set to true to avoid ios7 status bar overlap",
+                    "                                isTesting: false, // receiving test ad",
+                    "                                autoShow: true // auto show interstitial ad when loaded",
+                    "                            });",
+                    "                            this.registerAdEvents();",
+                    "",
+                    "                        } else {",
+                    "                            console.log( 'admob plugin not ready' );",
+                    "                        }",
+                    ""
+                ]
+            },
+            "designerId": "af8ad6f1-5c1e-4507-945f-e082b3a84557"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "registerAdEvents",
+                "implHandler": [
+                    " window.plugins.AdMob.createBannerView();",
+                    "        document.addEventListener('onReceiveAd', function(){});",
+                    "                        document.addEventListener('onFailedToReceiveAd', function(data){});",
+                    "                        document.addEventListener('onPresentAd', function(){});",
+                    "                        document.addEventListener('onDismissAd', function(){ });",
+                    "                        document.addEventListener('onLeaveToAd', function(){ });",
+                    "                        document.addEventListener('onReceiveInterstitialAd', function(){ });",
+                    "                        document.addEventListener('onPresentInterstitialAd', function(){ });",
+                    "                        document.addEventListener('onDismissInterstitialAd', function(){ });",
+                    "        window.plugins.AdMob.showAd(true,function(){},function(e){alert(JSON.stringify(e));});",
+                    ""
+                ]
+            },
+            "designerId": "c7969f06-993d-434c-bb03-4139bd53eba9"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onNewsSettings",
+                "implHandler": [
+                    "var localStore=Ext.getStore(\"localData\");",
+                    "var locald=localStore.getAt(0);",
+                    "var newsSettings=(locald.get(\"newssettings\"));",
+                    "",
+                    "var setup=newsSettings[0];",
+                    "",
+                    "Ext.getStore(\"PublicationList\").clearFilter();",
+                    "",
+                    "Ext.getStore(\"PublicationList\").filter(\"active\",\"1\",true,false);",
+                    "",
+                    "Ext.getStore(\"PublicationList\").filterBy(function(rec) {",
+                    "",
+                    "                     var code=  rec.get(\"code\");",
+                    "",
+                    "                        if(typeof(setup[code]) == \"undefined\") {",
+                    "                            return true;",
+                    "                        }else if(setup[code]){",
+                    "                            return true;",
+                    "                        }else{",
+                    "                            return false;",
+                    "                        }",
+                    "",
+                    "                });",
+                    ""
+                ]
+            },
+            "designerId": "41d9a785-5d53-46f7-8d86-d8134f31187b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "togglefield#toitoogle",
+                "designer|targetType": "Ext.field.Toggle",
+                "fn": "onTOITogglefieldChange",
+                "implHandler": [
+                    "this.onBeforesetPref(newValue,'toi');"
+                ],
+                "name": "change"
+            },
+            "designerId": "d0fd53b3-9779-4ff8-97e2-f94d864fe9d7"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "newValue",
+                    "param"
+                ],
+                "fn": "onBeforesetPref",
+                "implHandler": [
+                    "var localStore=Ext.getStore(\"localData\");",
+                    "var locald=localStore.getAt(0);",
+                    "var newsSettings=(locald.get(\"newssettings\"));",
+                    "",
+                    "var setup=newsSettings[0];",
+                    "",
+                    "",
+                    "",
+                    "if(newValue === 1){",
+                    "",
+                    "    setup[param]=true;",
+                    "}else{",
+                    "    setup[param]=false;",
+                    "}",
+                    "",
+                    " var testAr=[];",
+                    "                testAr.push(setup);",
+                    "                var newsSettings1={\"newssettings\":testAr};",
+                    "                var data = Ext.create('CON.model.localData',newsSettings1);",
+                    "                localStore.setData(data);",
+                    "                localStore.sync();",
+                    "                localStore.load();",
+                    "this.onNewsSettings();",
+                    ""
+                ]
+            },
+            "designerId": "93e02d64-dba9-42fd-84ef-9a856742c62b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "togglefield#hindutoggle",
+                "designer|targetType": "Ext.field.Toggle",
+                "fn": "onHinduTogglefieldChange",
+                "implHandler": [
+                    "this.onBeforesetPref(newValue,'hin');"
+                ],
+                "name": "change"
+            },
+            "designerId": "fbc93135-9d82-4baf-ada2-2455fa043675"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "togglefield#reuttoggle",
+                "designer|targetType": "Ext.field.Toggle",
+                "fn": "onReutTogglefieldChange",
+                "implHandler": [
+                    "this.onBeforesetPref(newValue,'ret');"
+                ],
+                "name": "change"
+            },
+            "designerId": "ebefa8c0-fab2-4f6e-a94b-8d98d4f849c7"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "togglefield#inetoggle",
+                "designer|targetType": "Ext.field.Toggle",
+                "fn": "onIndExpTogglefieldChange",
+                "implHandler": [
+                    "this.onBeforesetPref(newValue,'ine');"
+                ],
+                "name": "change"
+            },
+            "designerId": "09d450a1-810c-49f2-8d6e-6cac070502e9"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "togglefield#ecttoggle",
+                "designer|targetType": "Ext.field.Toggle",
+                "fn": "onEconomicsTogglefieldChange",
+                "implHandler": [
+                    "this.onBeforesetPref(newValue,'ect');"
+                ],
+                "name": "change"
+            },
+            "designerId": "71ae7647-38a1-477f-8d83-ec8ce421aa1e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "toi",
+                "selector": "togglefield#toitoogle"
+            },
+            "designerId": "e24902b6-f0a4-4069-b825-a858207e4de3"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "hin",
+                "selector": "togglefield#hindutoggle"
+            },
+            "designerId": "66b9f9f3-91e6-40a4-a5cf-466bd1277473"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "reut",
+                "selector": "togglefield#reuttoggle"
+            },
+            "designerId": "9522be0d-fb98-473d-b7a3-c8c26fa4f373"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "iexp",
+                "selector": "togglefield#inetoggle"
+            },
+            "designerId": "2ad4e711-8fb4-41cf-b7c6-62673e291d91"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "ect",
+                "selector": "togglefield#ecttoggle"
+            },
+            "designerId": "ea135993-a60a-4139-8a35-685df24e9e01"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "publicationCatNewsList",
+                "selector": "#catnewslist"
+            },
+            "designerId": "e1710015-aad4-419c-9bcc-9dc4eb366d77"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "audioPlay",
+                "selector": "button#audioPlay"
+            },
+            "designerId": "3d7f7ad9-26af-4141-b318-a61a663b3738"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#dictionaryiteam",
+                "designer|targetType": "Ext.Button",
+                "fn": "onDictionaryButtonTap",
+                "implHandler": [
+                    "/* var myList = this.getMyDictionaryList();",
+                    "if(!myList){",
+                    "",
+                    "          myList= Ext.widget('dictionarylist');",
+                    "",
+                    "          myList.showBy(button);",
+                    "          myList.down('#dictionarylist').setScrollable(false);",
+                    "        }else{",
+                    "        myList.down('#dictionarylist').setScrollable(false);",
+                    "          myList.showBy(button);",
+                    "",
+                    "        }*/",
+                    " /* Ext.Viewport.remove(panel1);",
+                    "panel1=Ext.create('Ext.Panel',{",
+                    "                                                               itemId:'floatingPanel',",
+                    "                                                               cls:'chartfloatingpanel-cls',",
+                    "                                                               top:e.pageY-400,",
+                    "                                                               left:e.pageX-300,",
+                    "                                                               width: 300,",
+                    "                                                               height: 400,",
+                    "                                                               layout: 'fit',",
+                    "                                                                items: [",
+                    "                                                                    {",
+                    "                                                                        xtype: 'list',",
+                    "                                                                        height: 380,",
+                    "                                                                        id: 'dictionarylist',",
+                    "                                                                        itemId: 'dictionarylist',",
+                    "                                                                        itemTpl: [",
+                    "                                                                            '<div>{word}</div>'",
+                    "                                                                        ],",
+                    "                                                                        store: 'Dictonary'",
+                    "                                                                    }",
+                    "                                                                ]",
+                    "                                                           });",
+                    "",
+                    "                                                           Ext.Viewport.add(panel1);",
+                    "                                                           */",
+                    "",
+                    "var DictionaryView = Ext.create('CON.view.MyDictionaryList',{title:\"My Words\"});",
+                    "",
+                    "CON.app.getController(\"Main\").pushView(DictionaryView, \"My Words\");",
+                    "Ext.Viewport.toggleMenu('right');"
+                ],
+                "name": "tap"
+            },
+            "designerId": "6cf85550-170c-40ea-8e2b-a4d06d13dfba"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "myDictionaryList",
+                "selector": "container#mydictionarycontent"
+            },
+            "designerId": "b89b4cb0-40f2-4a13-9d27-731184ae5d37"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "menu",
+                "designer|targetType": "Ext.Menu",
+                "fn": "onMenuHide",
+                "implHandler": [
+                    " //Ext.Viewport.remove(panel1);"
+                ],
+                "name": "hide"
+            },
+            "designerId": "c094bfe6-536d-4efc-9506-7b2262062f29"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "src"
+                ],
+                "fn": "changeFavicon",
+                "implHandler": [
+                    "var link = document.createElement('link'),",
+                    "     oldLink = document.getElementById('dynamic-favicon');",
+                    " link.id = 'dynamic-favicon';",
+                    " link.rel = 'shortcut icon';",
+                    " link.href = src;",
+                    " if (oldLink) {",
+                    "  document.head.removeChild(oldLink);",
+                    " }",
+                    " document.head.appendChild(link);"
+                ]
+            },
+            "designerId": "ae471d6f-eca3-4ad8-a2fa-58ca22ac5d58"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "button#audioPlay",
+                "designer|targetType": "Ext.Button",
+                "fn": "onAudioTap",
+                "implHandler": [
+                    "button.suspendEvents();",
+                    "var ind=button.bodyElement.classList.indexOf(\"audiobuttoncls\");",
+                    "if(ind > 0){",
+                    "",
+                    "button.removeCls(\"audiobuttoncls\");",
+                    "button.addCls(\"audiobuttoncls1\");",
+                    "",
+                    "var node = document.getElementById('newsdetail_description'),",
+                    "",
+                    "htmlContent = node.innerHTML;",
+                    "var shareDesc=htmlContent;",
+                    "textContent = node.textContent;",
+                    "shareDesc=textContent;",
+                    "     var msg = new SpeechSynthesisUtterance();",
+                    "        var voices = window.speechSynthesis.getVoices();",
+                    "        msg.voice = voices[0]; // Note: some voices don't support altering params",
+                    "        msg.voiceURI = 'native';",
+                    "        msg.volume = 1; // 0 to 1",
+                    "        msg.rate = 1; // 0.1 to 10",
+                    "        msg.pitch = 0; //0 to 2",
+                    "        msg.text = shareDesc;",
+                    "        msg.lang = 'en-US';",
+                    "",
+                    "        msg.onend = function(e) {",
+                    "            button.removeCls('audiobuttoncls1');",
+                    "                button.addCls('audiobuttoncls');",
+                    "",
+                    "        };",
+                    "",
+                    "        window.speechSynthesis.cancel();",
+                    "           window.speechSynthesis.speak(msg);",
+                    "",
+                    "}else{",
+                    "           window.speechSynthesis.cancel();",
+                    "",
+                    "button.removeCls(\"audiobuttoncls1\");",
+                    "button.addCls(\"audiobuttoncls\");",
+                    "}",
+                    "setTimeout(function(){button.resumeEvents();},2000);",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "designerId": "def2c6b1-a22f-4feb-b5d8-a724240f49d1"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "code",
+                    "val"
+                ],
+                "fn": "togglePub",
+                "implHandler": [
+                    "",
+                    "this.onBeforesetPref(val,code);"
+                ]
+            },
+            "designerId": "9ee9d615-19c7-4b04-9958-6156dd592594"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "mainNavBar",
+                "selector": "#mynavigationbar"
+            },
+            "designerId": "265e73f4-ac54-42f7-82dc-5e4f897ea5b9"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "footertoolbar",
+                "selector": "toolbar#footer_toolbar"
+            },
+            "designerId": "60f3a721-51af-4a26-a29a-927f5a12ab6e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "list#dictionarylist",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onDictonaryListItemTap",
+                "implHandler": [
+                    "",
+                    "var word=record.get(\"word\");",
+                    "var wordStore=Ext.getStore(\"Words\");",
+                    "",
+                    "        wordStore.getProxy().setUrl(\"resources/data/dict/\"+word+\".json\");",
+                    "",
+                    "        wordStore.load(function() {",
+                    "            var DictionaryDetView = Ext.create('CON.view.Dictionarydetail',{title:record.get(\"word\")});",
+                    "",
+                    "CON.app.getController(\"Main\").pushView(DictionaryDetView);",
+                    "",
+                    "        });",
+                    "",
+                    ""
+                ],
+                "name": "disclose"
+            },
+            "designerId": "46f56e81-fc63-4b4d-8fce-0d31f73b5ae1"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "image#topViewed",
+                "designer|targetType": "Ext.Img",
+                "fn": "onTopViewimageTap",
+                "implHandler": [
+                    "",
+                    "",
+                    "var selctpub = Ext.create('CON.view.SelectPublication',{\"title\":\"Choose Publication\"});",
+                    "",
+                    "",
+                    "CON.app.getController(\"Main\").pushView(selctpub, CON.title);",
+                    ""
+                ],
+                "name": "tap"
+            },
+            "designerId": "17044955-0332-4793-8d3e-6028ae7314cf"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "dataview#dictionarylist",
+                "designer|targetType": "Ext.dataview.DataView",
+                "fn": "onDictionaryDataviewItemTap",
+                "implHandler": [
+                    "setTimeout(function(){Ext.select('.con-listitemcls').each(function(el){",
+                    "                                    el.removeCls(\"con-listitem-selectedcls\");",
+                    "                                 });",
+                    "},100);",
+                    ""
+                ],
+                "name": "itemtouchend"
+            },
+            "designerId": "4bdd8daf-bd64-48f7-96b5-a04fae0c9ce5"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "prefFieldset",
+                "selector": "fieldset#prefFieldset"
+            },
+            "designerId": "893e9135-b81c-4aa3-bfef-b82eb272a545"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "checkConnection",
+                "implHandler": [
+                    "var me =this;",
+                    "var networkState = navigator.connection.type;",
+                    "",
+                    "    var states = {};",
+                    "    states[Connection.UNKNOWN]  = 'Unknown connection';",
+                    "    states[Connection.ETHERNET] = 'Ethernet connection';",
+                    "    states[Connection.WIFI]     = 'WiFi connection';",
+                    "    states[Connection.CELL_2G]  = 'Cell 2G connection';",
+                    "    states[Connection.CELL_3G]  = 'Cell 3G connection';",
+                    "    states[Connection.CELL_4G]  = 'Cell 4G connection';",
+                    "    states[Connection.CELL]     = 'Cell generic connection';",
+                    "    states[Connection.NONE]     = 'No network connection';",
+                    "if(networkState == Connection.NONE || networkState == Connection.UNKNOWN){",
+                    "    me.getHomeScreen().hide();",
+                    "    navigator.notification.confirm(",
+                    "    'CON requires an active internet connection to start.EDGE,3G and Wi-Fi are supported.', // message",
+                    "     function onConfirm(buttonIndex) {",
+                    "         if(buttonIndex == 1){",
+                    "             me.checkConnection();",
+                    "         }else if(buttonIndex == 2){",
+                    "",
+                    "         }",
+                    "    },            // callback to invoke with index of button pressed",
+                    "    'Network Required',           // title",
+                    "    ['Retry','Close']     // buttonLabels",
+                    "   );",
+                    "}else{",
+                    "    Ext.getStore('CategoryList').load();",
+                    "    Ext.getStore('PublicationList').load();",
+                    "    Ext.getStore('publication1').load();",
+                    "    Ext.getStore('CategoryPublications').load();",
+                    "    Ext.getStore('TopView').load();",
+                    "    me.getHomeScreen().show();",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "}",
+                    "    //return (states[networkState]);",
+                    ""
+                ]
+            },
+            "designerId": "956510ce-3701-4a88-971d-32c0a7cee392"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "topViewdCont",
+                "selector": "container#TopViewCont"
+            },
+            "designerId": "8d66ddfe-595b-4709-86f7-efc6c61dab26"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "homeScreen",
+                "selector": "container#HomeScreenLayout"
+            },
+            "designerId": "358956fc-dc23-4921-a8c0-2b2a94a97fc5"
+        }
+    ]
+}

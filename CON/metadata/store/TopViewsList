@@ -1,0 +1,15 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "TopViewsList",
+        "model": "TopView",
+        "storeId": "TopViewsList"
+    },
+    "designerId": "58275bde-5929-4ac8-8bea-5be38eabc2ef"
+}

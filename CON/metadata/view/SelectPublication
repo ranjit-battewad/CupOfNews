@@ -1,0 +1,58 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "con-bgcls"
+        ],
+        "designer|userClassName": "SelectPublication",
+        "id": "publist1",
+        "itemId": "publist",
+        "layout": "fit"
+    },
+    "designerId": "86932874-3c28-4189-bc95-0930964fa8ab",
+    "cn": [
+        {
+            "type": "Ext.dataview.DataView",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "dataview-inline"
+                ],
+                "designer|displayName": "Publication view",
+                "inline": true,
+                "itemId": "selectdataview",
+                "store": "PublicationList"
+            },
+            "configAlternates": {
+                "inline": "boolean"
+            },
+            "designerId": "c8aa957d-065a-43a3-a6a9-6aedd5f812b6",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "itemTpl",
+                        "implHandler": [
+                            "<div class=\"img\" style=\"background-image: url({image});\"></div>"
+                        ]
+                    },
+                    "designerId": "b37448b8-0169-4fe6-879a-ce9fa1c04a27"
+                }
+            ]
+        }
+    ]
+}

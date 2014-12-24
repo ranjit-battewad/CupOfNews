@@ -1,0 +1,43 @@
+{
+    "word":"legal",
+    "linebreaks": " legal ",
+    "pronunciation": [
+        {
+            "text": " /'li?g(?)l ",
+            "audioLink": " http://www.oxforddictionaries.com/media/english/uk_pron/l/leg/legal/legal__gb_1.mp3 "
+        }
+    ],
+    "origin": " late Middle English (in the sense 'to do with Mosaic law'): from French, or from Latin legalis, from lex, leg- 'law'. Compare with loyal. ",
+    "defination": [
+        {
+            "partsofspeech": "ADJECTIVE"
+        },
+        {
+            "usage": [
+                {
+                    "stamt": " This was no doubt the expensive legal advice it was given. "
+                },
+                {
+                    "stamt": " Texas's public defence system which provides legal advice for those who can't afford it, is notorious for its abysmal standards. "
+                },
+                {
+                    "stamt": " He declined to name them but said he advised the officials to seek legal advice and to speak with their insurers.."
+                }
+            ]
+        },
+        {
+            "synonyms": [
+                {
+                    "words": " judicial, juridical, jurisdictive, judicatory, forensic "
+                }
+            ]
+        },
+        {
+            "antonyms": [
+                {
+                    "words": "  illegal ,unacceptable "
+                }
+            ]
+        }
+    ]
+}

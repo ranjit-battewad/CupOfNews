@@ -1,0 +1,136 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "con-bgcls"
+        ],
+        "designer|userAlias": "dictionarylist",
+        "designer|userClassName": "MyDictionaryList",
+        "itemId": "mydictionarycontent",
+        "layout": "fit"
+    },
+    "designerId": "3a7626ad-ea2b-4c9d-b6a4-465dc2cc85f1",
+    "cn": [
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "con-bgcls"
+                ],
+                "data": null,
+                "height": "100%",
+                "id": "dictionarylist",
+                "itemId": "dictionarylist",
+                "onItemDisclosure": true,
+                "pressedCls": "con-listitem-selectedcls",
+                "selectedCls": "con-listitem-selectedcls",
+                "store": "Dictonary"
+            },
+            "designerId": "f19f1b7a-2665-4070-9d27-ba8a4d483123",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "itemTpl",
+                        "implHandler": [
+                            "<div>",
+                            "    <div>{word}</div>",
+                            "    ",
+                            "    <div style=\"float:right;margin-top: -26px;\"><img src=\"resources/project-images/trash.png\" style=\"height: 26px;width: 24px;margin-right: 38px;\"  onClick=CON.app.deleteDictionary({id}); /></div>",
+                            "    <!--",
+                            "    <div style=\"float:right;margin-top: -29px;\"><img src=\"resources/project-images/message-icon.png\" style=\"height: 33px;",
+                            "width: 37px;",
+                            "margin-right: 8px;\"/></div>-->",
+                            "</div>",
+                            ""
+                        ]
+                    },
+                    "designerId": "6eac832e-645b-49f5-9c26-7e2c08708002",
+                    "cn": [
+                        {
+                            "type": "templatefunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "id"
+                                ],
+                                "fn": "deleteDictionary",
+                                "implHandler": [
+                                    "alert(\"ok\");"
+                                ]
+                            },
+                            "designerId": "e88b2ab8-fa59-4983-b44e-9284866ceb43"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "deleteDictionary",
+                "implHandler": [
+                    ""
+                ]
+            },
+            "designerId": "33daad7b-c58c-4e02-9720-499b2c617b0b"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMydictionarycontentPainted",
+                "implHandler": [
+                    "",
+                    "",
+                    "/*var deleteButton = Ext.select('.deleteButton').elements[0];",
+                    " Ext.get(deleteButton).on('tap',function(e,a){",
+                    "     alert(\"delete\");",
+                    "",
+                    " });",
+                    "*//*",
+                    "var i=0;",
+                    "",
+                    "Ext.select('.deleteButton').each(function(el){",
+                    "        el.on('tap',function(e,a){",
+                    "     alert(\"delete\");",
+                    "",
+                    " });",
+                    "",
+                    "",
+                    "});*/"
+                ],
+                "name": "painted"
+            },
+            "designerId": "e2960a5b-7afe-4001-b437-dadfc55053e2"
+        }
+    ]
+}

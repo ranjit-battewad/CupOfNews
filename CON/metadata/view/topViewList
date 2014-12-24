@@ -1,0 +1,216 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "catData": [
+            "[]"
+        ],
+        "cls": [
+            "con-bgcls"
+        ],
+        "data": null,
+        "designer|userClassName": "topViewList",
+        "emptyText": "No News",
+        "height": "100%",
+        "id": "catnewslist1",
+        "itemCls": "con-listitemcls",
+        "itemId": "topcatnewslist",
+        "masked": null,
+        "selectedCls": "con-listitem-selectedcls",
+        "store": "TopViewsList",
+        "style": "bottom:40px;",
+        "title": "Cup of News"
+    },
+    "configAlternates": {
+        "catData": "array"
+    },
+    "designerId": "c5636d74-34cd-4f05-816a-5376e5965e53",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "catData",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div class=\"listtitle-cls\">{title}</div>",
+                    "<div class=\"listdaysago-cls\">",
+                    "    <B style=\"color:#FFFFFF;\">Viewd: </B>",
+                    "<tpl>",
+                    "{count}",
+                    "</tpl>",
+                    "</div>"
+                ]
+            },
+            "designerId": "eefe66f4-4184-4b26-b312-436a8265ccfc",
+            "cn": [
+                {
+                    "type": "templatefunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "pubDate"
+                        ],
+                        "fn": "getPubDateInHrs",
+                        "implHandler": [
+                            "var returnValue = '';",
+                            "var newsPubDate;",
+                            "",
+                            "if(pubDate.indexOf('0530') < 0){",
+                            "",
+                            "    newsPubDate = pubDate + '+0530';",
+                            "}else{",
+                            "",
+                            "   newsPubDate = pubDate;",
+                            "}",
+                            "",
+                            "",
+                            "var hrs = (Math.abs((new Date()).valueOf() - new Date(newsPubDate).valueOf() )) / 1000/60/60;",
+                            "",
+                            "    if(!Ext.isEmpty(hrs)){",
+                            "",
+                            "       if(Math.round(hrs) < 24){",
+                            "           returnValue = Math.round(hrs) + ' hours ago';",
+                            "",
+                            "        }else{",
+                            "            returnValue = Math.round((hrs)/24) + ' days ago';",
+                            "",
+                            "        }",
+                            "    }else{",
+                            "",
+                            "        returnValue = '';",
+                            "    }",
+                            "",
+                            "return returnValue;",
+                            ""
+                        ]
+                    },
+                    "designerId": "c3759ada-a4e4-445c-8c3b-353e22b55d9e"
+                }
+            ]
+        },
+        {
+            "type": "Ext.SegmentedButton",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "docked": "top",
+                "height": "",
+                "itemId": "topviewsseg",
+                "minHeight": "34px",
+                "pressedCls": "buttonselect-cls",
+                "scrollable": "horizontal"
+            },
+            "designerId": "521a0006-058e-4717-8672-657ecd9f2d8a"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMylistInitialize",
+                "implHandler": [
+                    "",
+                    "var pubCategories = this.config.catData;",
+                    "var segBtn = this.down('segmentedbutton');",
+                    "",
+                    "if(!Ext.isEmpty(pubCategories) && !Ext.isEmpty(segBtn)){",
+                    "",
+                    "    var defultPressedBtn = [];",
+                    "    var catSeq = 1;",
+                    "    for(a in pubCategories){",
+                    "        var catBtn = Ext.create('Ext.Button',{",
+                    "                text:a,",
+                    "                pubCategData : pubCategories[a]",
+                    "            });",
+                    "",
+                    "        if( catSeq == 1 ){",
+                    "",
+                    "            defultPressedBtn.push(catBtn);",
+                    "            catSeq ++;",
+                    "            //catBtn.setPressedCls('buttonselect-cls');",
+                    "        }",
+                    "",
+                    "        segBtn.add(catBtn);",
+                    "    }",
+                    "",
+                    "",
+                    "",
+                    "    segBtn.setPressedButtons(defultPressedBtn);",
+                    "}",
+                    "",
+                    "",
+                    ""
+                ],
+                "name": "initialize"
+            },
+            "designerId": "e5dd32a2-ab7f-46e5-a4bf-54afd1a99a45"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "myjson",
+                    "attr"
+                ],
+                "fn": "GroupBy",
+                "implHandler": [
+                    "var sum ={};",
+                    "",
+                    "    myjson.forEach( function(obj){",
+                    "        var catid=obj[attr];",
+                    "           var catStore=Ext.getStore(\"CategoryPublications\");",
+                    "        var catrec=catStore.find(\"categoryId\",catid);",
+                    "        var findrec=catStore.getAt(catrec);",
+                    "        var name=findrec.get(\"catName\");",
+                    "       if ( typeof sum[name] == 'undefined') {",
+                    "",
+                    "         sum[name]=[];",
+                    "           sum[name].push(obj);",
+                    "        }",
+                    "       else {",
+                    "         sum[name].push(obj);",
+                    "       }",
+                    "    });",
+                    "    return sum;"
+                ]
+            },
+            "designerId": "3e3efd1f-5375-4a42-b202-ecbb781b543a"
+        }
+    ]
+}

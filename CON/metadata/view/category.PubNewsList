@@ -1,0 +1,253 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "catData": [
+            "[]"
+        ],
+        "cls": [
+            "con-bgcls"
+        ],
+        "designer|userAlias": "pubnewslist",
+        "designer|userClassName": "category.PubNewsList",
+        "emptyText": "No News",
+        "height": "100%",
+        "id": "pubnewslist",
+        "itemCls": "con-listitemcls",
+        "itemId": "pubnewslist",
+        "masked": [
+            "{",
+            "     xtype: 'loadmask',",
+            "     message: 'Loading...'",
+            "   }"
+        ],
+        "pubData": [
+            "[]"
+        ],
+        "selectedCls": "con-listitem-selectedcls",
+        "store": null,
+        "style": "bottom:40px;",
+        "title": "Cup of News"
+    },
+    "configAlternates": {
+        "catData": "array",
+        "pubData": "array"
+    },
+    "designerId": "8decb7dc-7894-439b-8f65-55de8ecc1a06",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "catData",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "pubData",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div class=\"listtitle-cls\">{title}</div>",
+                    "<div class=\"listdaysago-cls\">",
+                    "    <B style=\"color:#FFFFFF;\">Last updated : </B>",
+                    "<tpl>",
+                    "{[this.getPubDateInHrs(values.pubDate)]}",
+                    "</tpl>",
+                    "</div>"
+                ]
+            },
+            "designerId": "0e42047d-05c3-4892-aefa-83e480929fa5",
+            "cn": [
+                {
+                    "type": "templatefunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "pubDate"
+                        ],
+                        "fn": "getPubDateInHrs",
+                        "implHandler": [
+                            "var returnValue = '';",
+                            "var newsPubDate;",
+                            "",
+                            "if(pubDate.indexOf('0530') < 0){",
+                            "",
+                            "    newsPubDate = pubDate + '+0530';",
+                            "}else{",
+                            "",
+                            "   newsPubDate = pubDate;",
+                            "}",
+                            "",
+                            "",
+                            "var hrs = (Math.abs((new Date()).valueOf() - new Date(newsPubDate).valueOf() )) / 1000/60/60;",
+                            "",
+                            "    if(!Ext.isEmpty(hrs)){",
+                            "        if(Math.round(hrs) < 24){",
+                            "           returnValue = Math.round(hrs) + ' hours ago';",
+                            "",
+                            "        }else{",
+                            "            returnValue = Math.round((hrs)/24) + ' days ago';",
+                            "",
+                            "        }",
+                            "",
+                            "",
+                            "    }else{",
+                            "",
+                            "        returnValue = '';",
+                            "    }",
+                            "",
+                            "return returnValue;",
+                            ""
+                        ]
+                    },
+                    "designerId": "f4630920-d319-4808-ba84-9d2766aa5125"
+                }
+            ]
+        },
+        {
+            "type": "Ext.SegmentedButton",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "docked": "top",
+                "height": "",
+                "itemId": "publicationsegbtns",
+                "minHeight": "35px",
+                "pressedCls": "buttonselect-cls",
+                "scrollable": "horizontal"
+            },
+            "designerId": "74147efc-1f9d-4ce7-8ccc-e5fdb93e9015"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMylistInitialize",
+                "implHandler": [
+                    "",
+                    "var catPublications = this.config.pubData;",
+                    "var segBtn = this.down('segmentedbutton');",
+                    "",
+                    "if(!Ext.isEmpty(catPublications) && !Ext.isEmpty(segBtn)){",
+                    "",
+                    "    var defultPressedBtn = [];",
+                    "    var pubSeq = 1;",
+                    "",
+                    "    Ext.Array.each(catPublications,function(publication){",
+                    "        var pubid=(publication.publicationId);",
+                    "",
+                    "        var pubStore=Ext.getStore(\"PublicationList\");",
+                    "        var pubrec=pubStore.find(\"id\",pubid);",
+                    "",
+                    "         if(pubrec >= 0){",
+                    "            var catBtn = Ext.create('Ext.Button',{",
+                    "                width:'160px',",
+                    "                height:'30px',",
+                    "                text:publication.pubName,",
+                    "                pubCategData : publication",
+                    "            });",
+                    "            if( pubSeq == 1 ){",
+                    "            CON.utils.Global.api.currentPubid=parseInt(publication.publicationId );",
+                    "           CON.utils.Global.api.currentCatid=parseInt(publication.categoryId );",
+                    "",
+                    "",
+                    "            defultPressedBtn.push(catBtn);",
+                    "            pubSeq ++;",
+                    "           // catBtn.setPressedCls('buttonselect-cls');",
+                    "        }",
+                    "",
+                    "        segBtn.add(catBtn);",
+                    "",
+                    "        }",
+                    "        //var code=(findrec.get(\"code\"));",
+                    "        //var newsSettings=window.localStorage.getItem(\"newsSettings\");",
+                    "        //newsSettings=JSON.parse(newsSettings);",
+                    "        //alert(newsSettings[code]);",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "});",
+                    "",
+                    "",
+                    "    segBtn.setPressedButtons(defultPressedBtn);",
+                    "}",
+                    "",
+                    "",
+                    ""
+                ],
+                "name": "initialize"
+            },
+            "designerId": "08d1d09a-5bec-49dc-8dfd-033eac609992"
+        },
+        {
+            "type": "Ext.plugin.ListPaging",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "a4b56270-86ee-4ff4-8cce-fc280440e231"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "myjson",
+                    "attr"
+                ],
+                "fn": "GroupBy",
+                "implHandler": [
+                    "var sum ={};",
+                    "",
+                    "    myjson.forEach( function(obj){",
+                    "       if ( typeof sum[obj[attr]] == 'undefined') {",
+                    "         sum[obj[attr]] = 1;",
+                    "       }",
+                    "       else {",
+                    "         sum[obj[attr]]++;",
+                    "       } ",
+                    "    });",
+                    "    return sum;"
+                ]
+            },
+            "designerId": "2d6a2ab3-d8c2-49b9-bfb0-39c2e1a0c709"
+        }
+    ]
+}

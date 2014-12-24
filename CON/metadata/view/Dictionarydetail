@@ -1,0 +1,208 @@
+{
+    "type": "Ext.dataview.DataView",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "catData": null,
+        "cls": [
+            "con-bgcls",
+            "con-listitemcls"
+        ],
+        "designer|userClassName": "Dictionarydetail",
+        "emptyText": "No News",
+        "height": "100%",
+        "id": null,
+        "itemCls": "con-listitemcls",
+        "itemId": "mydataview2",
+        "masked": null,
+        "pubData": null,
+        "selectedCls": null,
+        "store": "Words",
+        "title": null
+    },
+    "configAlternates": {
+        "catData": "array",
+        "pubData": "array"
+    },
+    "designerId": "2d25ebaa-57e9-48ed-b8ac-312e0dd2876c",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "catData",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "pubData",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div style=\"margin: 20px;color: #fff;font-weight: normal;\">",
+                    "     ",
+                    "    <span>Line breaks:{linebreaks}</span>",
+                    "    <div>Pronunciation:{[this.formatPronouncation(values.pronunciation)]}<img style=\"height: 17px;top: 3px;left: 2px;position: relative;\" src=\"resources/project-images/volume-high1.png\" onclick=CON.app.playMusic() />&nbsp;/</div>",
+                    "    <hr/>",
+                    "    <div style=\"font-size:25px;\">Definition of {word} in English:</div>",
+                    "    <div>{[this.formatDefination(values.defination)]}</div>",
+                    "    <div>{[this.formatDefinationUses(values.defination)]}</div>",
+                    "    <hr/>",
+                    "    <div>Synonyms</div>",
+                    "    <div>{[this.formatDefinationSynonyms(values.defination)]}</div>",
+                    "    <hr/>",
+                    "    <div>Antonyms</div>",
+                    "    <div>{[this.formatDefinationAntonyms(values.defination)]}</div>",
+                    "    <hr/>",
+                    "    <div>Origin</div>",
+                    "    <div>{origin}</div>",
+                    "",
+                    "</div>",
+                    ""
+                ]
+            },
+            "designerId": "dd56d115-51d8-482c-a07f-3d2df6634715",
+            "cn": [
+                {
+                    "type": "templatefunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "values"
+                        ],
+                        "fn": "formatPronouncation",
+                        "implHandler": [
+                            "",
+                            "var rettext=(values[0].text)+'&nbsp';",
+                            "//window.localStorage.setItem(\"audiolink\",(values[0].audioLink));",
+                            "CON.utils.Global.currentAudiolink=(values[0].audioLink);",
+                            "",
+                            "return rettext;",
+                            "",
+                            ""
+                        ]
+                    },
+                    "designerId": "48a124d5-0196-438e-a307-896c955301ea"
+                },
+                {
+                    "type": "templatefunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "playMusic",
+                        "implHandler": [
+                            "alert(\"ooo\");"
+                        ]
+                    },
+                    "designerId": "14e73dac-18d9-4a45-b15b-dc7c7944cd88"
+                },
+                {
+                    "type": "templatefunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "defination"
+                        ],
+                        "fn": "formatDefination",
+                        "implHandler": [
+                            "return (defination[0].partsofspeech);"
+                        ]
+                    },
+                    "designerId": "ab11ff33-268f-4497-8996-48fea01f9679"
+                },
+                {
+                    "type": "templatefunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "defination"
+                        ],
+                        "fn": "formatDefinationUses",
+                        "implHandler": [
+                            "var usage=defination[1].usage;",
+                            "var renderHtml=\"<ol>\";",
+                            "for(a in usage){",
+                            "   renderHtml+='<li>'+(parseInt(a)+1)+' ) '+(usage[a].stamt)+'</li>';",
+                            "}",
+                            "renderHtml+='</ol>';",
+                            "return renderHtml;"
+                        ]
+                    },
+                    "designerId": "b52de7a1-8705-45a8-a2c6-46e87d36bec0"
+                },
+                {
+                    "type": "templatefunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "defination"
+                        ],
+                        "fn": "formatDefinationSynonyms",
+                        "implHandler": [
+                            "var usage=defination[2].synonyms;",
+                            "return usage[0].words;",
+                            ""
+                        ]
+                    },
+                    "designerId": "4d0db830-630d-4032-8ed2-edf41c841765"
+                },
+                {
+                    "type": "templatefunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "defination"
+                        ],
+                        "fn": "formatDefinationAntonyms",
+                        "implHandler": [
+                            "var usage=defination[3].antonyms;",
+                            "return usage[0].words;",
+                            ""
+                        ]
+                    },
+                    "designerId": "6694073d-ecb4-45be-8383-ed4eb63c8d89"
+                }
+            ]
+        }
+    ]
+}

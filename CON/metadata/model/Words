@@ -1,0 +1,74 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Words"
+    },
+    "designerId": "5e2f03a4-f519-49af-b041-ec542d47394d",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "linebreaks"
+            },
+            "designerId": "93d4c27b-65a0-41c6-8a30-c903b9d4f29c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "pronunciation"
+            },
+            "designerId": "fb8d44fe-f532-4b6c-bb97-e9e2fedd062b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "origin"
+            },
+            "designerId": "d0b47a99-48a8-4940-b197-ec749ceb3990"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "defination"
+            },
+            "designerId": "3a721402-c9ed-4e2c-ba72-7b492332aa1f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "word"
+            },
+            "designerId": "dbe1bdfa-903e-4eb3-bd14-cc9fc108b993"
+        }
+    ]
+}

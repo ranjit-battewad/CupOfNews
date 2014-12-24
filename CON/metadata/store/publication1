@@ -1,0 +1,56 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "publication1",
+        "model": "PublicationList",
+        "storeId": "publication1"
+    },
+    "designerId": "f46dc12a-c18b-4996-ac76-6164b60cd50b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://aceconapi.walkingtree.in/acerest/index.php/publication"
+            },
+            "designerId": "6a22d13d-aacb-4e09-aa1c-b3394899b44e",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "6cb48a7f-a91b-4bdf-8531-b8e6dc550697"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonpstoreLoad",
+                "implHandler": [
+                    "store.filter(\"active\",\"1\",true,false);"
+                ],
+                "name": "load"
+            },
+            "designerId": "9288c06a-5809-4dad-904f-f0c0546e3fb1"
+        }
+    ]
+}

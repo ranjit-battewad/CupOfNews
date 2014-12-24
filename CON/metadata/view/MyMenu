@@ -1,0 +1,45 @@
+{
+    "type": "Ext.Menu",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyMenu",
+        "minWidth": "300px",
+        "width": "40%"
+    },
+    "designerId": "05740f3c-1702-40e4-a7ce-3f09a9e0466d",
+    "cn": [
+        {
+            "type": "Ext.Label",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "User Preference",
+                "margin": "10 0 10 0",
+                "style": "color:#FFF;text-align:center"
+            },
+            "designerId": "76007eef-12c2-4a4e-a396-26c14951c5ad"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": "100%",
+                "minWidth": null,
+                "width": null
+            },
+            "designerId": "076d4d29-2574-4727-82e1-9787503792fd",
+            "masterInstanceId": "2564056c-1594-4670-b36a-dd3796b7d012"
+        }
+    ]
+}

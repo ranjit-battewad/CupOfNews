@@ -1,0 +1,43 @@
+{
+    "word":"impact",
+    "linebreaks": " im|pact ",
+    "pronunciation": [
+        {
+            "text": " /'?mpakt ",
+            "audioLink": " http://www.oxforddictionaries.com/media/english/uk_pron/i/imp/impac/impact__gb_1.mp3 "
+        }
+    ],
+    "origin": " early 17th century (as a verb in the sense 'press closely, fix firmly'): from Latin impact- 'driven in', from the verb impingere.",
+    "defination": [
+        {
+            "partsofspeech": "VERB"
+        },
+        {
+            "usage": [
+                {
+                    "stamt": " Then the ground shakes very violently as another shell impacts. "
+                },
+                {
+                    "stamt": "It will give spotting corrections to the ship calling the fall of shot until the projectiles are impacting within 50 yards of the target. "
+                },
+                {
+                    "stamt": " What was left of the fuselage impacted less then twenty yards from where he stood. "
+                }
+            ]
+        },
+        {
+            "synonyms": [
+                {
+                    "words": " crash into, smash into, collide with, be in collision with, hit, strike"
+                }
+            ]
+        },
+        {
+            "antonyms": [
+                {
+                    "words": " agreement "
+                }
+            ]
+        }
+    ]
+}

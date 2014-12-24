@@ -1,0 +1,43 @@
+{
+    "word":"reflect",
+    "linebreaks": " re|flect ",
+    "pronunciation": [
+        {
+            "text": " /r?'fl?kt ",
+            "audioLink": " http://www.oxforddictionaries.com/media/english/uk_pron/r/ref/refle/reflect__gb_1.mp3 "
+        }
+    ],
+    "origin": " late Middle English: from Old French reflecter or Latin reflectere, from re- 'back' + flectere 'to bend'. ",
+    "defination": [
+        {
+            "partsofspeech": " VERB "
+        },
+        {
+            "usage": [
+                {
+                    "stamt": " The lightness or darkness of a color affects whether it can absorb or reflect heat and light. "
+                },
+                {
+                    "stamt": " Reflectance, on the other hand, is determined by how much of the surface is reflecting the light. "
+                },
+                {
+                    "stamt": " Venetian blinds, although not as effective as draperies, can be adjusted to let in some light and air while reflecting the sun's heat. "
+                }
+            ]
+        },
+        {
+            "synonyms": [
+                {
+                    "words": " indicate, show, display, demonstrate, be evidence of, register"
+                }
+            ]
+        },
+        {
+            "antonyms": [
+                {
+                    "words": "be original ,take "
+                }
+            ]
+        }
+    ]
+}

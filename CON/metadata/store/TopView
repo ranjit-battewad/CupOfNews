@@ -1,0 +1,40 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "TopView",
+        "model": "TopView",
+        "storeId": "TopView"
+    },
+    "designerId": "b2930074-e692-44ee-9499-8d070a27dc22",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://aceconapi.walkingtree.in/acerest/index.php/topviewednews"
+            },
+            "designerId": "f7bbb9b4-0b00-47d6-ae06-40e9ec0eb9ec",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "1a22df48-34e8-4af3-bf28-0fab05fc6eb0"
+                }
+            ]
+        }
+    ]
+}

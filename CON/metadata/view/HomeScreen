@@ -1,0 +1,175 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "con-bgcls"
+        ],
+        "designer|userAlias": "homescreen",
+        "designer|userClassName": "HomeScreen",
+        "itemId": "HomeScreenLayout",
+        "layout": "vbox"
+    },
+    "designerId": "cb904b27-e876-4372-beaa-f8179ee927f7",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "cls": [
+                    "coverplacecls"
+                ],
+                "height": "50%"
+            },
+            "designerId": "9bfd8590-905d-41d2-94fe-64c925614b24",
+            "masterInstanceId": "5f2313ef-9ad4-4ad7-9ad3-0b481a45d91a"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "PubandTop",
+                "height": 300,
+                "layout": "hbox"
+            },
+            "designerId": "3ea8356b-15ec-4b4c-99b6-b0464729929d",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "border-top": "2em",
+                        "centered": false,
+                        "height": "100%",
+                        "layout|flex": 2
+                    },
+                    "designerId": "2f9a686c-58d9-4fa5-8f8f-72dbf4472c78",
+                    "customConfigs": [
+                        {
+                            "group": "(Custom Properties)",
+                            "name": "border-top",
+                            "type": "string"
+                        }
+                    ],
+                    "masterInstanceId": "abe5fe25-bd13-42e8-a34b-f66fb34923ed"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "TopViewdCont",
+                        "itemId": "TopViewCont",
+                        "layout": "vbox",
+                        "layout|flex": 1
+                    },
+                    "designerId": "a77e71b0-6765-4033-a3ce-3760774b32e8",
+                    "cn": [
+                        {
+                            "type": "Ext.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "html": "Favourites",
+                                "margin": "10 0 0 0",
+                                "style": "color:#fff;"
+                            },
+                            "designerId": "2a79615c-961b-470d-8a17-36e6f0f46adc"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "fit"
+                            },
+                            "designerId": "1b8bd5f3-67f9-4c66-8f2e-f86a3744a3c4",
+                            "cn": [
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 100,
+                                        "hidden": true,
+                                        "itemId": "topViewed",
+                                        "margin": "4 40 40 40",
+                                        "padding": "",
+                                        "src": "resources/project-images/topviewed.jpg",
+                                        "style": "border-radius:14px;",
+                                        "width": 100
+                                    },
+                                    "designerId": "379ebfad-8ffe-423f-a2ad-e26155b1842f"
+                                },
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 100,
+                                        "hidden": true,
+                                        "itemId": null,
+                                        "margin": "4 40 40 40",
+                                        "padding": "",
+                                        "src": "resources/project-images/img-rated.jpg",
+                                        "style": "border-radius:14px;",
+                                        "width": 100
+                                    },
+                                    "designerId": "ab33215c-40df-4db8-8ee2-826c29626dd3"
+                                },
+                                {
+                                    "type": "linkedinstance",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "data": [
+                                            "null"
+                                        ],
+                                        "height": 300
+                                    },
+                                    "designerId": "2f19bc5f-f9c3-4c24-9fb1-46b49c9b05a2",
+                                    "masterInstanceId": "506340cf-6f3a-4c08-8351-cdb4b4724c77"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

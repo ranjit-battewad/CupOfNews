@@ -1,0 +1,40 @@
+{
+    "type": "jsonpstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "designer|userClassName": "CategoryPublications",
+        "model": "CategoryPublications",
+        "storeId": "CategoryPublications"
+    },
+    "designerId": "4ddc78d8-4d22-4c7a-8fa2-20ca19331f15",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://aceconapi.walkingtree.in/acerest/index.php/category_publications"
+            },
+            "designerId": "5275bde8-6afc-4db1-b7e6-852ba8c06936",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "c191e1d6-824e-4271-a7af-b5bfbe8fdb99"
+                }
+            ]
+        }
+    ]
+}

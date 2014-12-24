@@ -1,0 +1,38 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        \"word\": \"factor\",",
+            "        \"id\": 1",
+            "    },",
+            "    {",
+            "        \"word\": \"impact\",",
+            "        \"id\": 2",
+            "    },",
+            "    {",
+            "        \"word\": \"legal\",",
+            "        \"id\": 3",
+            "    },",
+            "    {",
+            "        \"word\": \"pattern\",",
+            "        \"id\": 4",
+            "    },",
+            "    {",
+            "        \"word\": \"reflect\",",
+            "        \"id\": 5",
+            "    }",
+            "]"
+        ],
+        "designer|userClassName": "Dictonary",
+        "model": "Dictionary",
+        "storeId": "Dictonary"
+    },
+    "designerId": "11307fd4-a0fc-4e7c-ab51-18e802a2f1b1"
+}

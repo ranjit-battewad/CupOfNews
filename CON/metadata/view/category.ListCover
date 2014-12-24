@@ -1,0 +1,62 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "centered": true,
+        "designer|userAlias": "categorycover",
+        "designer|userClassName": "category.ListCover",
+        "layout": "vbox"
+    },
+    "designerId": "5f2313ef-9ad4-4ad7-9ad3-0b481a45d91a",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "initialize",
+                "implHandler": [
+                    "this.callParent();",
+                    "var CategoryList = Ext.getStore('CategoryList');",
+                    "",
+                    "var cover = Ext.create('WTC.ux.Cover', {",
+                    "\t\t\titemCls: 'my-cover-item',",
+                    "    height:'100%',",
+                    "\t\t\t//height: (Ext.os.deviceType !== 'Phone')? 300: undefined,",
+                    "            //\twidth: (Ext.os.deviceType !== 'Phone')? 800: undefined,",
+                    "            width:'100%',",
+                    "\t\t\titemTpl : [",
+                    "\t\t\t\t'<div>',",
+                    "",
+                    "\t\t\t\t\t'<div class=\"company\">{name}</div>',",
+                    "\t\t\t\t\t'<div class=\"image\"><tpl if=\"image\"><img  src=\"{image}\"></tpl></div>',",
+                    "\t\t\t\t'</div>'",
+                    "\t\t\t],",
+                    "            store:CategoryList,",
+                    "            selectedIndex: 5,",
+                    "\t\t\tlisteners:{",
+                    "\t\t\t\titemdoubletap: function(){",
+                    "\t\t\t\t\tconsole.log('itemdbltap', arguments);",
+                    "\t\t\t\t},",
+                    "\t\t\t\titemtap: function(cover, idx){",
+                    "                    ",
+                    "                   CON.app.fireEvent('catItemTapped', cover, idx);",
+                    "\t\t\t\t},",
+                    "\t\t\t\tscope: this",
+                    "\t\t\t}",
+                    "\t\t});",
+                    "",
+                    "    this.add(cover);"
+                ]
+            },
+            "designerId": "b5c1ea8b-5274-4013-b357-0a17492ce985"
+        }
+    ]
+}

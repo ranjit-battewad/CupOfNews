@@ -1,0 +1,41 @@
+{
+    "type": "packagesetting",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "androidAPILevel": "8",
+        "applicationId": "com.mycompany.myAppID",
+        "applicationName": "CON",
+        "configuration": "Debug",
+        "designer|userClassName": "packager",
+        "deviceType": "Universal",
+        "icon": [
+            "{\"36\":\"resources/icons/Icon_Android36.png\",\"48\":\"resources/icons/Icon_Android48.png\",\"72\":\"resources/icons/Icon~ipad.png\"}"
+        ],
+        "inputPath": "./",
+        "orientations": [
+            "portrait",
+            "portraitUpsideDown",
+            "landscapeLeft",
+            "landscapeRight"
+        ],
+        "outputPath": "../build/",
+        "permissions": [
+            "INTERNET",
+            "ACCESS_NETWORK_STATE",
+            "CAMERA",
+            "VIBRATE",
+            "ACCESS_FINE_LOCATION",
+            "ACCESS_COARSE_LOCATION",
+            "CALL_PHONE"
+        ],
+        "platform": "AndroidEmulator",
+        "sdkPath": "/Users/walkingtree/Documents/adt-bundle-mac-x86_64-20140702/sdk",
+        "versionCode": "1",
+        "versionString": "1.0"
+    },
+    "designerId": "46a10a98-43d9-41db-8a60-33413bedf638"
+}

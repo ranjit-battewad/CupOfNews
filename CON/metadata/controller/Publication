@@ -1,0 +1,222 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Publication"
+    },
+    "designerId": "481f6e65-5c88-41d7-9df1-1dc5df3252e9",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "publicationview",
+                "selector": "dataview#mydataview"
+            },
+            "designerId": "c001f1f4-b384-48ac-89d2-e307a4045b1a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "dataview#mydataview",
+                "designer|targetType": "Ext.dataview.DataView",
+                "fn": "onPublicationItemTap",
+                "implHandler": [
+                    "",
+                    "this.handlePublicationItemTap(record);"
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "b86b47a3-319e-4d28-9b0d-5438a6ca7abd"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "categorysegbtns",
+                "selector": "segmentedbutton#categorysegbtns"
+            },
+            "designerId": "51fdfd18-6a36-4685-907b-a2c80809017b"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "segmentedbutton#categorysegbtns",
+                "designer|targetType": "Ext.SegmentedButton",
+                "fn": "onSegmentedbuttonToggle",
+                "implHandler": [
+                    "if(isPressed){",
+                    "",
+                    "",
+                    "",
+                    "var pub=(button.config.pubCategData);",
+                    "     CON.utils.Global.api.currentPubid=parseInt(pub.publicationId );",
+                    "           CON.utils.Global.api.currentCatid=parseInt(pub.categoryId );",
+                    " var feedUrl = button.config.pubCategData.feedurl;",
+                    "",
+                    " this.feedStore = Ext.create('CON.store.NewsFeed');",
+                    "",
+                    "\tthis.feedStore.setParams({'feedurl':feedUrl});",
+                    "    button.up('list').setStore(this.feedStore);",
+                    "\tthis.feedStore.load({",
+                    "\t\tcallback:function(records){",
+                    "",
+                    "\t\t},scope: this",
+                    "\t});",
+                    "",
+                    "",
+                    "}",
+                    ""
+                ],
+                "name": "toggle"
+            },
+            "designerId": "403b18a4-af6e-4ba0-a2f3-5adf635c3f88"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "publicationCatNewsList",
+                "selector": "list#catnewslist"
+            },
+            "designerId": "d039afbb-d9ec-4f2a-a056-cfbfab262293"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "list#catnewslist",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "var alldat=(record.getData());",
+                    "",
+                    "Ext.data.JsonP.request({",
+                    "",
+                    "            url: 'http://aceconapi.walkingtree.in/toprest/trackviews',",
+                    "            params: {",
+                    "                title : alldat.title ,",
+                    "                link:alldat.link,",
+                    "                description:alldat.description,",
+                    "                guid:alldat.guid ,",
+                    "                catId:CON.utils.Global.api.currentCatid,",
+                    "                pubId:CON.utils.Global.api.currentPubid,",
+                    "                pubDate:alldat.pubDate",
+                    "            },",
+                    "",
+                    "            success: function(response) {",
+                    "                Ext.Viewport.setMasked(false);",
+                    "            },",
+                    "            failure: function(response) {",
+                    "                Ext.Viewport.setMasked(false);",
+                    "                //form.up('homepage').setActiveItem(1);",
+                    "            }",
+                    "        });",
+                    "",
+                    "var newsDetailView = Ext.create('CON.view.publication.Detail',{});",
+                    "",
+                    "newsDetailView.setData(record.getData());",
+                    "",
+                    "CON.app.getController(\"Main\").pushView(newsDetailView, CON.title);",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "86dbc260-d339-4eac-b3ab-fa12f179490e"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "handlePublicationItemTap",
+                "implHandler": [
+                    "var categoryPub=Ext.getStore(\"CategoryPublications\");",
+                    "//alert(CON.utils.Global.api.currentPubid);",
+                    "",
+                    "CON.utils.Global.api.currentPubcode=record.get(\"code\");",
+                    "CON.utils.Global.api.currentPubid=parseInt(record.get(\"id\"));",
+                    "//alert(CON.utils.Global.api.currentPubid);",
+                    "",
+                    "categoryPub.clearFilter();",
+                    "        categoryPub.filterBy(function(rec) {",
+                    "",
+                    "                          return  (parseInt(rec.get(\"publicationId\")) == parseInt(record.get(\"id\")) && (parseInt(rec.get(\"isActive\")) == 1));",
+                    "         });",
+                    "        var recordItems = categoryPub.data.items;",
+                    "        var newrecords=[];",
+                    "        for(var i=categoryPub.getCount()-1; i>=0;i--){",
+                    "",
+                    "                       newrecords.push(recordItems[i].getData());",
+                    "        }",
+                    "",
+                    " var catNewsListView = Ext.create('CON.view.publication.CatNewsList',{",
+                    "",
+                    "    catData : newrecords,",
+                    "     title:record.get(\"name\")",
+                    " });",
+                    "",
+                    "CON.app.getController(\"Main\").pushView(catNewsListView, CON.title);",
+                    "",
+                    ""
+                ]
+            },
+            "designerId": "0e60357d-74f5-48f4-b518-dd10fc313f4e"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "container#pubdetail",
+                "designer|targetType": "Ext.Container",
+                "fn": "onPublicdetailContainerPainted",
+                "implHandler": [
+                    "//alert(\"coming again\");",
+                    ""
+                ],
+                "name": "activate"
+            },
+            "designerId": "5bba7977-0184-4ee9-98e4-bb4115ee5072"
+        }
+    ]
+}

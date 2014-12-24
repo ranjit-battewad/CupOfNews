@@ -1,0 +1,243 @@
+{
+    "data": [
+        {
+            "code": "hl",
+            "name": "Top News",
+            "image": "resources/project-images/topnews.png",
+            "publications": [
+                {
+                    "name": "Times of India",
+                    "code": "toi",
+                    "catCode": "hl",
+                    "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533965/index.rss"
+                },
+                {
+                    "name": "E Times",
+                    "code": "et",
+                    "pubCode": "hl",
+                    "feedUrl": "http://economictimes.indiatimes.com/rssfeedstopstories.cms"
+                },
+                {
+                    "name": "Reuters",
+                    "code": "re",
+                    "catCode": "hl",
+                    "feedUrl": "http://in.reuters.com/rssFeed/topNews"
+                },
+                {
+                    "name": "Indian Express",
+                    "code": "iex",
+                    "catCode": "hl",
+                    "feedUrl": "http://indianexpress.com/print/front-page/feed/"
+                }
+            ]
+        },
+        {
+            "code": "wld",
+            "name": "World",
+            "image": "resources/project-images/world.png",
+            "publications": [
+                {
+                    "name": "TOI",
+                    "code": "toi'",
+                    "catCode": "wld",
+                    "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533917/index.rss"
+                },
+                {
+                    "name": "Reuters",
+                    "code": "re",
+                    "catCode": "wld",
+                    "feedUrl": "http://in.reuters.com/rssFeed/worldNews"
+                },
+                {
+                    "name": "Indian Express",
+                    "code": "iex",
+                    "catCode": "wld",
+                    "feedUrl": "http://indianexpress.com/section/world/feed/"
+                }
+            ]
+        },
+        {
+            "code": "ind",
+            "name": "India",
+            "image": "resources/project-images/india.png",
+            "publications": [
+                {
+                    "name": "TOI",
+                    "code": "toi",
+                    "catCode": "wld",
+                    "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533916/index.rss"
+                },
+                {
+                    "name": "Indian Express",
+                    "code": "iex",
+                    "catCode": "wld",
+                    "feedUrl": "http://indianexpress.com/section/india/feed/"
+                }
+            ]
+        },
+        {
+            "code": "bus",
+            "name": "Business",
+            "image": "resources/project-images/bus.png",
+            "publications": [
+                {
+                    "name": "TOI",
+                    "code": "toi",
+                    "catCode": "bus",
+                    "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533919/index.rss"
+                },
+                {
+                    "name": "Reuters",
+                    "code": "ret",
+                    "pubCode": "bus",
+                    "feedUrl": "http://in.reuters.com/rssFeed/businessNews"
+                },
+                {
+                    "name": "E Times",
+                    "code": "et",
+                    "catCode": "bus",
+                    "feedUrl": "http://economictimes.indiatimes.com/rssfeeds/858478126.cms"
+                }
+            ]
+        },
+        {
+            "code": "spt",
+            "name": "Sports",
+            "image": "resources/project-images/sports.png",
+            "publications": [
+                {
+                    "name": "TOI",
+                    "code": "toi",
+                    "catCode": "spt",
+                    "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533921/index.rss"
+                },
+                {
+                    "name": "Reuters",
+                    "code": "ret",
+                    "pubCode": "spt",
+                    "feedUrl": "http://in.reuters.com/rssFeed/sportsNews"
+                },
+                {
+                    "name": "Indian Express",
+                    "code": "iex",
+                    "catCode": "spt",
+                    "feedUrl": "http://indianexpress.com/section/sports/feed/"
+                }
+            ]
+        },
+        {
+            "code": "mkt",
+            "name": "Market",
+            "image": "resources/project-images/mn.png",
+            "publications": [
+                {
+                    "name": "Reuters",
+                    "code": "ret",
+                    "pubCode": "mkt",
+                    "feedUrl": "http://economictimes.indiatimes.com/Markets/markets/rssfeeds/1977021501.cms"
+                }
+            ]
+        },
+        {
+            "code": "pf",
+            "name": "Personal Finance",
+            "image": "resources/project-images/pf.png",
+            "publications": [
+                {
+                    "name": "Reuters",
+                    "code": "ret",
+                    "pubCode": "pf",
+                    "feedUrl": "http://economictimes.indiatimes.com/rssfeeds/837555174.cms"
+                }
+            ]
+        },
+        {
+            "code": "del",
+            "name": "City - Delhi",
+            "image": "resources/project-images/delhi.png",
+            "publications": [
+                {
+                    "name": "TOI",
+                    "code": "toi",
+                    "catCode": "del",
+                    "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533976/index.rss"
+                },
+                {
+                    "name": "Indian Express",
+                    "code": "iex",
+                    "catCode": "del",
+                    "feedUrl": "http://indianexpress.com/section/cities/delhi/feed/"
+                }
+            ]
+        },
+        {
+            "code": "tech",
+            "name": "Technology",
+            "image": "resources/project-images/tech.png",
+            "publications": [
+                {
+                    "name": "TOI",
+                    "code": "toi",
+                    "catCode": "spt",
+                    "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533923/index.rss"
+                },
+                {
+                    "name": "Reuters",
+                    "code": "ret",
+                    "pubCode": "tech",
+                    "feedUrl": "http://in.reuters.com/rssFeed/technologyNews"
+                },
+                {
+                    "name": "Indian Express",
+                    "code": "iex",
+                    "catCode": "tech",
+                    "feedUrl": "http://indianexpress.com/section/technology/feed/"
+                }
+            ]
+        },
+        {
+            "code": "ent",
+            "name": "Entertrainment",
+            "image": "resources/project-images/ent.png",
+            "publications": [
+                {
+                    "name": "TOI",
+                    "code": "toi",
+                    "catCode": "ent",
+                    "feedUrl": "http://timesofindia.feedsportal.com/c/33039/f/533928/index.rss"
+                },
+                {
+                    "name": "Reuters",
+                    "code": "ret",
+                    "pubCode": "ent",
+                    "feedUrl": "http://in.reuters.com/rssFeed/entertainmentNews"
+                },
+                {
+                    "name": "Indian Express",
+                    "code": "iex",
+                    "catCode": "ent",
+                    "feedUrl": "http://indianexpress.com/section/entertainment/feed/"
+                }
+            ]
+        },
+        {
+            "code": "hel",
+            "name": "Health",
+            "image": "resources/project-images/health.png",
+            "publications": [
+                {
+                    "name": "Reuters",
+                    "code": "ret",
+                    "pubCode": "hel",
+                    "feedUrl": "http://in.reuters.com/rssFeed/health"
+                },
+                {
+                    "name": "Indian Express",
+                    "code": "iex",
+                    "catCode": "hel",
+                    "feedUrl": "http://indianexpress.com/section/lifestyle/feed/"
+                }
+            ]
+        }
+    ]
+}

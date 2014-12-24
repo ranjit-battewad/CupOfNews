@@ -1,0 +1,190 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "Publication",
+            "Main",
+            "Category",
+            "TopNews"
+        ],
+        "models": [
+            "Publication",
+            "Category",
+            "Dictionary",
+            "CategoryList",
+            "PublicationList",
+            "CategoryPublications",
+            "Words",
+            "TopView",
+            "localData"
+        ],
+        "name": "CON",
+        "requires": [
+            "WTC.ux.Cover"
+        ],
+        "stores": [
+            "NewsFeed",
+            "Category",
+            "Publication",
+            "Dictonary",
+            "CategoryList",
+            "PublicationList",
+            "CategoryPublications",
+            "publication1",
+            "Words",
+            "TopView",
+            "TopViewsList",
+            "localData"
+        ],
+        "title": "Cup of News",
+        "views": [
+            "category.ListCover",
+            "publication.List",
+            "publication.CatNewsList",
+            "publication.Detail",
+            "MainNav",
+            "HomeScreen",
+            "MyPanel",
+            "PublicationPref",
+            "category.PubNewsList",
+            "MyMenu",
+            "MyDictionaryList",
+            "Dictionarydetail",
+            "SelectPublication",
+            "Toprated",
+            "topViewList",
+            "PopUp"
+        ]
+    },
+    "designerId": "application",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.Loader",
+            "reference": {
+                "name": "loader",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "paths": [
+                    "{\"WTC.ux\":\"wtc/ux\"}"
+                ]
+            },
+            "designerId": "c0b9ea4e-b599-48e7-a354-e2ba589ae03e"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "Ext.fly('appLoadingIndicator').destroy();",
+                    "/*",
+                    "document.addEventListener(\"deviceready\", function(){",
+                    "    alert(\"device ready\");",
+                    "                                                   ",
+                    "document.addEventListener(\"online\", function(){alert(\"online\");}, false);",
+                    "document.addEventListener(\"offline\", function(){alert(\"offline\");}, false);",
+                    " ",
+                    "",
+                    "                                                   ",
+                    "                                                   ",
+                    "                                                   }, false);",
+                    "",
+                    "*/"
+                ]
+            },
+            "designerId": "d1184740-4d97-45b7-8b17-275c64104540"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "id"
+                ],
+                "fn": "deleteDictionary",
+                "implHandler": [
+                    "",
+                    "",
+                    "",
+                    "    var jsondata=[];",
+                    "",
+                    "    Ext.getStore('Dictonary').each(function(record) {",
+                    "",
+                    "    if (record.get('id') === id) {",
+                    "        Ext.getStore('Dictonary').remove(record);",
+                    "    }else{",
+                    "        jsondata.push({\"id\":record.get(\"id\"),\"word\":record.get(\"word\")});",
+                    "    }",
+                    "    }, this);",
+                    "",
+                    "",
+                    "      //  window.localStorage.setItem(\"DictionaryArray\",JSON.stringify(jsondata));",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "designerId": "b41b28b5-b21e-4ddf-9dbe-13ed62d040ac"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "playMusic",
+                "implHandler": [
+                    "",
+                    "",
+                    "    var audioLink=CON.utils.Global.currentAudiolink;",
+                    "    var audio=new Audio();",
+                    "    audio.src=audioLink;",
+                    "    audio.play();",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "designerId": "12d00a2c-4f56-4bfd-9b49-881de757f75a"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "openAdmobSite",
+                "implHandler": [
+                    "window.open(\"http://walkingtree.in/\");"
+                ]
+            },
+            "designerId": "7d4995d3-e2eb-4bb8-9a00-b12dcdedab57"
+        }
+    ]
+}

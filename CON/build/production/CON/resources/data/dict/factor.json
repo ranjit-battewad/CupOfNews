@@ -1,0 +1,43 @@
+{
+    "word":"factor",
+    "linebreaks": " fac|tor",
+    "pronunciation": [
+        {
+            "text": " /'fakt? ",
+            "audioLink": " http://www.oxforddictionaries.com/media/english/uk_pron/f/fac/facto/factor__gb_1.mp3 "
+        }
+    ],
+    "origin": " late Middle English (meaning 'doer', also in the Scots sense 'agent'): from French facteur or Latin factor, from fact- 'done', from the verb facere..",
+    "defination": [
+        {
+            "partsofspeech": " VERB "
+        },
+        {
+            "usage": [
+                {
+                    "stamt": " I don't understand how to start out factoring this algebra. "
+                },
+                {
+                    "stamt": " They were however concerned that they might be factoring bogus invoices. "
+                },
+                {
+                    "stamt": " The Department of Education had estimated the bill for compensation would reach €508m, rising to €610m when legal and administration costs were factored in.."
+                }
+            ]
+        },
+        {
+            "synonyms": [
+                {
+                    "words": " agent, representative, deputy, middleman, intermediary "
+                }
+            ]
+        },
+        {
+            "antonyms": [
+                {
+                    "words": "whole,composite "
+                }
+            ]
+        }
+    ]
+}

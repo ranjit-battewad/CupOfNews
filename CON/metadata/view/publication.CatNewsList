@@ -1,0 +1,200 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "catData": [
+            "[]"
+        ],
+        "cls": [
+            "con-bgcls"
+        ],
+        "designer|userAlias": "catnewslist",
+        "designer|userClassName": "publication.CatNewsList",
+        "emptyText": "No News",
+        "height": "100%",
+        "id": "catnewslist",
+        "itemCls": "con-listitemcls",
+        "itemId": "catnewslist",
+        "masked": [
+            "{",
+            "     xtype: 'loadmask',",
+            "     message: 'Loading...'",
+            "   }"
+        ],
+        "selectedCls": "con-listitem-selectedcls",
+        "store": null,
+        "style": "bottom:40px;",
+        "title": "Cup of News"
+    },
+    "configAlternates": {
+        "catData": "array"
+    },
+    "designerId": "6757903a-b5ec-4700-a655-c18fd05f3762",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "catData",
+            "type": "string"
+        },
+        {
+            "group": "(Custom Properties)",
+            "name": "title",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div class=\"listtitle-cls\">{title}</div>",
+                    "<div class=\"listdaysago-cls\">",
+                    "    <B style=\"color:#FFFFFF;\">Last updated : </B>",
+                    "<tpl>",
+                    "{[this.getPubDateInHrs(values.pubDate)]}",
+                    "</tpl>",
+                    "</div>"
+                ]
+            },
+            "designerId": "b6b5f11b-f6b3-4750-9ba0-46afd1993686",
+            "cn": [
+                {
+                    "type": "templatefunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "pubDate"
+                        ],
+                        "fn": "getPubDateInHrs",
+                        "implHandler": [
+                            "var returnValue = '';",
+                            "var newsPubDate;",
+                            "",
+                            "if(pubDate.indexOf('0530') < 0){",
+                            "",
+                            "    newsPubDate = pubDate + '+0530';",
+                            "}else{",
+                            "",
+                            "   newsPubDate = pubDate;",
+                            "}",
+                            "",
+                            "",
+                            "var hrs = (Math.abs((new Date()).valueOf() - new Date(newsPubDate).valueOf() )) / 1000/60/60;",
+                            "",
+                            "    if(!Ext.isEmpty(hrs)){",
+                            "",
+                            "       if(Math.round(hrs) < 24){",
+                            "           returnValue = Math.round(hrs) + ' hours ago';",
+                            "",
+                            "        }else{",
+                            "            returnValue = Math.round((hrs)/24) + ' days ago';",
+                            "",
+                            "        }",
+                            "    }else{",
+                            "",
+                            "        returnValue = '';",
+                            "    }",
+                            "",
+                            "return returnValue;",
+                            ""
+                        ]
+                    },
+                    "designerId": "63ef319c-4eab-4982-b083-7b82411d76ea"
+                }
+            ]
+        },
+        {
+            "type": "Ext.SegmentedButton",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "docked": "top",
+                "height": "",
+                "itemId": "categorysegbtns",
+                "minHeight": "34px",
+                "pressedCls": "buttonselect-cls",
+                "scrollable": "horizontal"
+            },
+            "designerId": "69cb7859-74ff-497e-b6f3-307dded63916"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMylistInitialize",
+                "implHandler": [
+                    "",
+                    "var pubCategories = this.config.catData;",
+                    "",
+                    "",
+                    "",
+                    "var segBtn = this.down('segmentedbutton');",
+                    "",
+                    "if(!Ext.isEmpty(pubCategories) && !Ext.isEmpty(segBtn)){",
+                    "",
+                    "    var defultPressedBtn = [];",
+                    "    var catSeq = 1;",
+                    "",
+                    "    Ext.Array.each(pubCategories,function(category){",
+                    "        var catBtn = Ext.create('Ext.Button',{",
+                    "                text:category.catName,",
+                    "                pubCategData : category",
+                    "            });",
+                    "",
+                    "        if( catSeq == 1 ){",
+                    "           CON.utils.Global.api.currentPubid=parseInt(category.publicationId );",
+                    "           CON.utils.Global.api.currentCatid=parseInt(category.categoryId );",
+                    "",
+                    "            defultPressedBtn.push(catBtn);",
+                    "            catSeq ++;",
+                    "            //catBtn.setPressedCls('buttonselect-cls');",
+                    "        }",
+                    "",
+                    "        segBtn.add(catBtn);",
+                    "",
+                    "});",
+                    "",
+                    "",
+                    "    segBtn.setPressedButtons(defultPressedBtn);",
+                    "}",
+                    "",
+                    "",
+                    ""
+                ],
+                "name": "initialize"
+            },
+            "designerId": "8d76393e-af4c-4b39-8c13-5dbe67eabd5e"
+        },
+        {
+            "type": "Ext.plugin.ListPaging",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "aa947b3f-0e72-463e-af58-b95091bb0190"
+        }
+    ]
+}

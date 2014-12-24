@@ -1,0 +1,223 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TopNews"
+    },
+    "designerId": "86731034-6a38-4c5f-80d1-dde247f7ef35",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "dataview#selectdataview",
+                "designer|targetType": "Ext.dataview.DataView",
+                "fn": "onSelectDataviewItemTap",
+                "implHandler": [
+                    "",
+                    "var pubid=(record.get(\"id\"));",
+                    "",
+                    "var me=this;",
+                    "Ext.Viewport.setMasked({\"xtype\":\"loadmask\",\"title\":\"Loading...\"});",
+                    "",
+                    "var topViewStore=Ext.getStore(\"TopView\");",
+                    "topViewStore.load(function(record11){",
+                    "    Ext.Viewport.setMasked(false);",
+                    "",
+                    "",
+                    "  topViewStore.clearFilter();",
+                    "        topViewStore.filterBy(function(rec) {",
+                    "            //alert(parseInt(rec.get(\"categoryId\")) +\"==\"+ parseInt(catid));",
+                    "",
+                    "                       //alert(parseInt(rec.get(\"categoryId\")) == parseInt(catid));",
+                    "                          return  (parseInt(rec.get(\"pubId\")) == parseInt(pubid) && (parseInt(rec.get(\"isActive\")) == 1));",
+                    "         });",
+                    "",
+                    "",
+                    "",
+                    "var recordItems = topViewStore.data.items;",
+                    "        var newrecords=[];",
+                    "        for(var i=topViewStore.getCount()-1; i>=0;i--){",
+                    "",
+                    "                       newrecords.push(recordItems[i].getData());",
+                    "        }",
+                    "var result = me.GroupBy(newrecords,\"catId\");",
+                    "",
+                    "     Ext.getStore(\"TopViewsList\").setData([]);",
+                    "",
+                    "",
+                    " var catNewsListView = Ext.create('CON.view.topViewList',{",
+                    "",
+                    "    catData : result,",
+                    "     title:record.get(\"name\")",
+                    " });",
+                    "",
+                    "CON.app.getController(\"Main\").pushView(catNewsListView, CON.title);",
+                    "",
+                    "",
+                    "",
+                    "});",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "c673322c-5587-4342-9612-4cce3239b3a4"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "dataview#mydataview3",
+                "designer|targetType": "Ext.dataview.DataView",
+                "fn": "onDataviewItemTap",
+                "implHandler": [
+                    "if(index == 0){",
+                    "    var selctpub = Ext.create('CON.view.SelectPublication',{\"title\":\"Choose Publication\"});",
+                    "",
+                    "",
+                    "CON.app.getController(\"Main\").pushView(selctpub, CON.title);",
+                    "",
+                    "}",
+                    "",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "1c250b3d-e24a-4fc1-86f1-b50a4131a6a1"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "myjson",
+                    "attr"
+                ],
+                "fn": "GroupBy",
+                "implHandler": [
+                    "var sum ={};",
+                    "",
+                    "    myjson.forEach( function(obj){",
+                    "        var catid=obj[attr];",
+                    "           var catStore=Ext.getStore(\"CategoryPublications\");",
+                    "        var catrec=catStore.find(\"categoryId\",catid);",
+                    "        var findrec=catStore.getAt(catrec);",
+                    "        var name=findrec.get(\"catName\");",
+                    "       if ( typeof sum[name] == 'undefined') {",
+                    "           ",
+                    "         sum[name]=[];",
+                    "           sum[name].push(obj);",
+                    "        }",
+                    "       else {",
+                    "         sum[name].push(obj);",
+                    "       } ",
+                    "    });",
+                    "    return sum;"
+                ]
+            },
+            "designerId": "be5cee73-93a3-4e5a-9327-5f0aebdf7fd1"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "segmentedbutton#topviewsseg",
+                "designer|targetType": "Ext.SegmentedButton",
+                "fn": "oncatSegmentedbuttonToggle",
+                "implHandler": [
+                    "if(isPressed){",
+                    "",
+                    "",
+                    "    var category=(button.config.pubCategData);",
+                    "    Ext.getStore(\"TopViewsList\").setData(category);",
+                    "    //this.getTopViewList().setData(category);",
+                    "",
+                    "}",
+                    ""
+                ],
+                "name": "toggle"
+            },
+            "designerId": "cf1962b8-6d7b-45ed-895b-586293708342"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "topViewList",
+                "selector": "list#catnewslist1"
+            },
+            "designerId": "67b0fb08-05bd-4ceb-9d7f-bc30a11c82e9"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "list#catnewslist1",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onTopListItemTap",
+                "implHandler": [
+                    "var alldat=(record.getData());",
+                    "Ext.data.JsonP.request({",
+                    "",
+                    "            url: 'http://aceconapi.walkingtree.in/toprest/trackviews',",
+                    "            params: {",
+                    "                title : alldat.title ,",
+                    "                link:alldat.link,",
+                    "                description:alldat.description,",
+                    "                guid:alldat.guid ,",
+                    "                catId:alldat.catId,",
+                    "                pubId:alldat.pubId,",
+                    "                pubDate:alldat.pubDate",
+                    "            },",
+                    "",
+                    "            success: function(response) {",
+                    "                Ext.Viewport.setMasked(false);",
+                    "            },",
+                    "            failure: function(response) {",
+                    "                Ext.Viewport.setMasked(false);",
+                    "                //form.up('homepage').setActiveItem(1);",
+                    "            }",
+                    "        });",
+                    "",
+                    "",
+                    "var newsDetailView = Ext.create('CON.view.publication.Detail',{});",
+                    "",
+                    "newsDetailView.setData(record.getData());",
+                    "",
+                    "CON.app.getController(\"Main\").pushView(newsDetailView, CON.title);",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "25b7d521-ced4-4ca8-a472-76dbaedfe9fb"
+        }
+    ]
+}
