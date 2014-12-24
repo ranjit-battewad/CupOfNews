@@ -21,3 +21,6 @@ news / media services to satisfy the curiosity of our readers which they wont fi
 * Mobile responsive
 * User friendly UI
 
+
+
+![alt text](https://github.com/ranjit-battewad/CupOfNews/blob/master/con.png "CON app home screen")
